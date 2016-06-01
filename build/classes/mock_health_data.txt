@@ -1,0 +1,1015 @@
+@relation 'users'
+@attribute id numeric
+@attribute first_name string
+@attribute last_name string
+@attribute gender {Female, Male}
+@attribute language {Mandarin, Spanish, English, Japanese, French, Klingon, Money}
+@attribute occupation string
+@attribute latitude numeric
+@attribute longitude numeric
+@attribute race {Black, Asian, Latino, White, Native_American, Ugly}
+@attribute income numeric
+@attribute psy_symptoms {Depression, Anxiety, Psychosis}
+@attribute phy_symptoms {Headache, Nausea, Aching, Overheating, Pain}
+@attribute other_symptoms {Bleeding, Rash, Bruise}
+@attribute doctor {Rey, Anderson, Blackwell, Cooley, Carson, Drew, Urbani}
+@attribute doctor_rating numeric
+@data
+1,Jacqueline,Clark,Female,Mandarin,'Health Coach III',-7.147,111.6679,Asian,146927.69,Depression,Pain,Bruise,Carson,4
+2,Timothy,Little,Male,Money,'Legal Assistant',5.51667,5.75,Asian,98902.80,Psychosis,Aching,Rash,Carson,4
+3,Joshua,Burke,Male,Klingon,'Safety Technician III',39.65,-8.8299,Asian,133832.08,Psychosis,Overheating,Rash,Cooley,4
+4,Howard,Howard,Male,Japanese,'Software Engineer II',-41.96051,-71.53336,Native_American,117525.11,Depression,Headache,Bleeding,Anderson,1
+5,Matthew,Edwards,Male,English,'Staff Scientist',45.1,120.35,Black,85337.84,Anxiety,Aching,Bleeding,Blackwell,5
+6,Bonnie,Martin,Female,Japanese,'Senior Editor',42.12215,60.06276,Asian,170400.89,Depression,Aching,Rash,Drew,2
+7,Howard,Brooks,Male,English,'Senior Sales Associate',-9.7222,124.6496,Ugly,222030.60,Depression,Aching,Bruise,Urbani,4
+8,Janice,Marshall,Female,Mandarin,'Mechanical Systems Engineer',12.51667,-86.28333,Native_American,100970.13,Anxiety,Headache,Bleeding,Carson,3
+9,James,Gordon,Male,Klingon,'Help Desk Technician',60.58333,22.9,White,159820.87,Depression,Headache,Rash,Anderson,1
+10,Anna,Ross,Female,English,'Help Desk Technician',44.8,126.53333,White,214936.48,Anxiety,Nausea,Bruise,Carson,1
+11,Howard,Lawson,Male,Spanish,'Cost Accountant',33.7217,-84.3339,White,149008.64,Depression,Headache,Bleeding,Rey,1
+12,Ernest,Garza,Male,Mandarin,'Senior Cost Accountant',-26.27391,29.2253,Asian,106101.33,Psychosis,Pain,Rash,Drew,3
+13,Brian,Ramirez,Male,Spanish,'Staff Accountant III',37.11664,70.58002,Ugly,190046.31,Depression,Pain,Bruise,Rey,3
+14,Victor,Warren,Male,Japanese,'Research Associate',22.74628,113.81903,Ugly,129928.75,Anxiety,Headache,Bleeding,Anderson,1
+15,Benjamin,Stevens,Male,Spanish,'VP Accounting',31.70507,113.70487,Latino,93176.64,Depression,Nausea,Rash,Rey,1
+16,Stephen,Fields,Male,English,'Web Developer I',52.62366,38.50169,White,218789.80,Psychosis,Pain,Bruise,Carson,1
+17,Gregory,Ellis,Male,Money,'Systems Administrator III',-7.3532,108.01,Asian,130587.98,Anxiety,Aching,Rash,Blackwell,4
+18,Tina,West,Female,Mandarin,'Analyst Programmer',28.3135,115.08198,Ugly,295148.17,Depression,Pain,Rash,Cooley,5
+19,Katherine,Price,Female,Mandarin,'Nurse Practicioner',38.8494,-9.4301,Ugly,223723.91,Depression,Pain,Bleeding,Urbani,2
+20,Chris,Simmons,Male,English,'VP Sales',31.3181,118.47744,Black,76138.68,Depression,Nausea,Rash,Urbani,2
+21,Frank,Meyer,Male,Mandarin,'Geologist II',-7.91167,-34.90278,Asian,3048.90,Anxiety,Nausea,Bleeding,Anderson,1
+22,Stephanie,Mason,Female,Money,'Quality Control Specialist',40.16505,44.36328,Native_American,215876.98,Psychosis,Nausea,Bruise,Anderson,3
+23,Rose,Stone,Female,Japanese,'Safety Technician I',38.47472,114.22972,Black,189852.81,Depression,Pain,Bleeding,Blackwell,2
+24,Kathleen,Nichols,Female,Klingon,'Assistant Professor',-4.32758,15.31357,Ugly,53314.91,Psychosis,Overheating,Rash,Cooley,4
+25,Steven,Little,Male,Mandarin,'Chemical Engineer',56.99081,52.18517,Asian,26491.66,Anxiety,Nausea,Bruise,Blackwell,2
+26,Aaron,Duncan,Male,Klingon,'Geological Engineer',32.54278,111.50861,White,274297.08,Anxiety,Aching,Bleeding,Urbani,5
+27,Kevin,Black,Male,Spanish,'General Manager',39.575,-8.2917,Native_American,143341.08,Depression,Headache,Rash,Anderson,4
+28,Ryan,Gilbert,Male,Japanese,'Assistant Manager',35.9279,-114.9721,Black,270079.90,Depression,Pain,Bruise,Drew,1
+29,Maria,Anderson,Female,Japanese,'VP Sales',32.05805,121.48555,Native_American,89031.05,Anxiety,Aching,Bruise,Anderson,1
+30,Irene,Diaz,Female,French,'Account Coordinator',40.9983,71.67257,Ugly,66304.11,Anxiety,Nausea,Rash,Drew,2
+31,Daniel,Snyder,Male,French,'Chemical Engineer',-6.83667,-79.93417,Latino,106686.51,Depression,Aching,Bleeding,Blackwell,1
+32,Tina,Barnes,Female,English,'Cost Accountant',38.7167,-9.3333,White,222948.01,Psychosis,Headache,Bruise,Carson,5
+33,Roger,Powell,Male,Japanese,'Assistant Professor',48.81492,25.59989,Native_American,88408.29,Depression,Headache,Rash,Carson,5
+34,Lillian,Medina,Female,Money,'VP Product Management',7.93248,-72.60125,White,225496.37,Depression,Headache,Bruise,Blackwell,1
+35,Robert,Lynch,Male,French,'Teacher',44.11108,130.20484,Native_American,69105.99,Depression,Overheating,Bruise,Urbani,3
+36,Ruth,Johnson,Female,Money,'Librarian',58.9544,36.5956,Ugly,132561.93,Depression,Aching,Bruise,Cooley,5
+37,Julie,Fox,Female,English,'Clinical Specialist',33.1,129.98333,Black,154944.16,Anxiety,Aching,Bleeding,Rey,2
+38,Justin,Lee,Male,Klingon,'Analyst Programmer',52.2658,6.7931,White,190789.26,Depression,Pain,Bleeding,Rey,3
+39,Scott,Garcia,Male,Klingon,'Nurse',-7.2324,108.1252,Native_American,157537.16,Anxiety,Pain,Bruise,Urbani,1
+40,Stephanie,Simmons,Female,Money,'Technical Writer',5.30644,-1.98474,Ugly,99183.15,Psychosis,Nausea,Rash,Blackwell,3
+41,Kenneth,Hansen,Male,Klingon,'Food Chemist',-24.32389,-50.61556,White,71897.39,Depression,Pain,Bleeding,Anderson,3
+42,Harold,Morris,Male,French,'Assistant Media Planner',-7.2,35.73333,Black,218578.15,Anxiety,Pain,Bleeding,Drew,4
+43,Arthur,Rice,Male,Money,'Librarian',8.1075,126.02639,Latino,42406.93,Psychosis,Aching,Bleeding,Anderson,4
+44,Sean,Edwards,Male,Japanese,'Geologist I',-8.5098,115.2654,Black,80078.44,Psychosis,Pain,Bruise,Carson,1
+45,Fred,Franklin,Male,Klingon,'Staff Accountant II',38.95,-9.0167,Asian,250067.42,Anxiety,Pain,Rash,Drew,5
+46,Donald,Anderson,Male,Mandarin,'Human Resources Manager',21.15173,110.55061,Native_American,188109.81,Anxiety,Headache,Rash,Carson,3
+47,Cheryl,Carroll,Female,Money,'Software Consultant',29.4375,-98.4616,Native_American,250636.11,Depression,Headache,Bruise,Drew,5
+48,Timothy,Mendoza,Male,French,'Media Manager IV',44.6201,4.3899,Asian,196618.16,Depression,Aching,Bruise,Urbani,2
+49,Richard,Miller,Male,Mandarin,'Business Systems Development Analyst',50.20366,16.23762,Native_American,243700.84,Psychosis,Pain,Rash,Anderson,3
+50,Donna,Andrews,Female,Klingon,'Marketing Assistant',35.1114,-82.1055,Ugly,282416.55,Depression,Overheating,Rash,Anderson,2
+51,Adam,Gardner,Male,Japanese,'Senior Editor',36.80803,10.0972,Native_American,68438.62,Anxiety,Headache,Bleeding,Carson,4
+52,Kathryn,Montgomery,Female,Japanese,'Quality Engineer',69.19889,33.44778,Black,180169.82,Depression,Pain,Bleeding,Anderson,5
+53,Jason,Kelly,Male,Money,'Clinical Specialist',13.8489,121.1328,Black,39717.56,Psychosis,Nausea,Rash,Cooley,3
+54,Diane,Wright,Female,Klingon,'Dental Hygienist',-33.12745,-62.09453,Asian,235096.22,Anxiety,Pain,Rash,Rey,5
+55,Walter,Cruz,Male,Japanese,'Legal Assistant',54.20658,17.66816,Ugly,143930.12,Depression,Overheating,Bruise,Cooley,2
+56,Dennis,Knight,Male,Spanish,'Electrical Engineer',39.6749,-84.1136,Native_American,254400.64,Anxiety,Aching,Bleeding,Cooley,5
+57,Mary,Wheeler,Female,English,'Accounting Assistant IV',38.7202,-77.4391,White,171709.53,Anxiety,Overheating,Bleeding,Urbani,2
+58,Carolyn,Campbell,Female,French,'Cost Accountant',45.38722,14.47944,White,66608.14,Depression,Pain,Rash,Blackwell,4
+59,Carolyn,Graham,Female,Japanese,'Sales Associate',-16.1,-69.56667,Asian,30423.31,Anxiety,Pain,Bruise,Anderson,4
+60,Ernest,Rice,Male,Klingon,'Financial Advisor',-11.26222,-37.61972,Native_American,75977.13,Anxiety,Overheating,Bleeding,Rey,2
+61,Andrea,Brooks,Female,Mandarin,'Web Developer III',19.7289,-96.7792,Ugly,71617.69,Anxiety,Overheating,Bruise,Cooley,2
+62,Andrew,Richardson,Male,Mandarin,'Financial Advisor',57.7072,11.9668,Black,173734.60,Depression,Overheating,Bruise,Anderson,5
+63,Phyllis,Larson,Female,Spanish,'Structural Analysis Engineer',26.95034,113.78682,Ugly,237567.81,Anxiety,Headache,Bruise,Urbani,2
+64,Debra,Edwards,Female,Money,'Administrative Officer',59.35,17.9167,Ugly,276434.74,Anxiety,Aching,Bruise,Cooley,5
+65,Gregory,Little,Male,Klingon,'Computer Systems Analyst IV',-16.91667,49.58333,Latino,288668.40,Psychosis,Nausea,Bruise,Rey,1
+66,Denise,Banks,Female,Klingon,'Office Assistant III',-8.2211,124.5432,Latino,171625.23,Psychosis,Overheating,Bleeding,Drew,1
+67,Michelle,Jenkins,Female,Money,'Programmer II',60.37552,93.03017,Asian,49296.35,Depression,Pain,Bleeding,Blackwell,5
+68,Anthony,Lawson,Male,Money,'Database Administrator II',-14.65685,28.07057,Asian,249325.45,Psychosis,Aching,Bleeding,Cooley,5
+69,John,Chapman,Male,Klingon,'Assistant Professor',50.48623,15.69622,Native_American,296936.55,Anxiety,Overheating,Bleeding,Blackwell,5
+70,Samuel,Hicks,Male,French,'General Manager',31.77078,35.26916,Black,150684.05,Depression,Aching,Rash,Rey,4
+71,Judith,Lewis,Female,Spanish,'Project Manager',30.66212,114.45623,Asian,30727.52,Anxiety,Overheating,Rash,Urbani,5
+72,Clarence,Fields,Male,English,'Administrative Assistant I',-3.68107,-79.68083,Ugly,113796.13,Psychosis,Headache,Rash,Urbani,2
+73,Cheryl,Jones,Female,Spanish,'Assistant Media Planner',54.72774,39.51731,Black,294585.94,Anxiety,Pain,Rash,Blackwell,2
+74,Jack,Johnson,Male,English,'Payment Adjustment Coordinator',13.75,-15.8,White,46085.71,Anxiety,Headache,Bruise,Cooley,4
+75,Larry,Bryant,Male,Spanish,'Tax Accountant',-22.4625,-42.65306,Native_American,113143.17,Psychosis,Nausea,Bleeding,Carson,3
+76,Marilyn,Diaz,Female,Klingon,'Help Desk Technician',36.93744,137.50059,Latino,213240.15,Psychosis,Pain,Bruise,Anderson,5
+77,Marie,Mcdonald,Female,Money,'Editor',32.71206,119.88177,Native_American,80048.79,Psychosis,Headache,Rash,Urbani,5
+78,Annie,Banks,Female,Japanese,'Database Administrator IV',49.84694,15.65643,White,235004.77,Depression,Aching,Bleeding,Drew,5
+79,Wayne,Meyer,Male,English,'Desktop Support Technician',40.41514,122.66117,Ugly,248333.76,Psychosis,Aching,Rash,Carson,1
+80,Jacqueline,Andrews,Female,English,'Sales Associate',-8.071,113.1016,White,279429.52,Anxiety,Overheating,Bruise,Carson,2
+81,Peter,Day,Male,Klingon,'Engineer I',29.81667,113.46667,White,31857.67,Anxiety,Nausea,Rash,Rey,2
+82,Judy,Morgan,Female,Klingon,'Accounting Assistant I',54.76667,23.5,Black,18333.89,Psychosis,Pain,Bleeding,Cooley,2
+83,Diana,Ramirez,Female,Money,'Web Designer I',41.84508,21.10538,White,206786.36,Depression,Overheating,Rash,Urbani,2
+84,Stephanie,Olson,Female,Japanese,'Community Outreach Specialist',39.0305,-76.5515,Black,156384.88,Depression,Aching,Rash,Cooley,5
+85,Billy,Richardson,Male,Mandarin,'Administrative Assistant II',-7.3525,107.8127,Ugly,27224.61,Anxiety,Nausea,Rash,Urbani,3
+86,Julia,Murphy,Female,French,'Environmental Specialist',-7.5632,108.6946,Asian,227064.29,Anxiety,Nausea,Bleeding,Rey,3
+87,Johnny,Rogers,Male,French,'Research Associate',-16.2525,-47.95028,Latino,46340.96,Depression,Pain,Rash,Urbani,3
+88,Gerald,Wagner,Male,Spanish,'Actuary',10.81028,122.54472,Asian,17029.21,Depression,Nausea,Rash,Anderson,1
+89,Christina,West,Female,Klingon,'Assistant Media Planner',11.1964,124.035,White,21008.13,Psychosis,Nausea,Bleeding,Cooley,2
+90,Maria,Rogers,Female,Money,'Speech Pathologist',48.64331,25.73794,Native_American,68555.66,Anxiety,Nausea,Bruise,Anderson,3
+91,Gloria,Owens,Female,Japanese,'Assistant Manager',-6.2612,106.1203,Native_American,271906.70,Depression,Overheating,Rash,Carson,4
+92,Carl,Scott,Male,Money,'Food Chemist',46.1377,39.7832,Black,269333.00,Anxiety,Pain,Rash,Urbani,5
+93,Tina,Burns,Female,Mandarin,'Structural Engineer',48.47092,24.94678,Asian,249860.42,Depression,Aching,Rash,Blackwell,4
+94,Adam,Jordan,Male,Klingon,'Statistician II',-7.1252,108.1538,Ugly,45005.18,Depression,Overheating,Bleeding,Anderson,2
+95,Chris,Graham,Male,Money,'Sales Representative',10.25,123.25,Asian,166621.38,Anxiety,Nausea,Rash,Anderson,3
+96,Margaret,Rose,Female,Klingon,'Electrical Engineer',-16.15,-70.56667,Native_American,277547.69,Depression,Headache,Bruise,Blackwell,1
+97,Bonnie,Young,Female,Spanish,'Graphic Designer',3.75024,-74.92932,Latino,26265.04,Anxiety,Aching,Rash,Blackwell,4
+98,Brian,Coleman,Male,Spanish,'Staff Scientist',33.83333,130.83333,Asian,34094.26,Psychosis,Headache,Bleeding,Rey,4
+99,Laura,Coleman,Female,French,'Web Developer III',-3.31667,-60.35,Native_American,1601.08,Psychosis,Aching,Rash,Cooley,1
+100,Henry,Hayes,Male,French,'Cost Accountant',57.85,14.1167,Latino,119193.25,Anxiety,Nausea,Bleeding,Cooley,5
+101,Ernest,Daniels,Male,Spanish,'Analyst Programmer',54.66667,51.5,Latino,177553.18,Psychosis,Overheating,Rash,Blackwell,4
+102,Sarah,Rodriguez,Female,Klingon,'VP Quality Control',38.4617,-9.137,Native_American,192983.71,Depression,Headache,Bruise,Carson,3
+103,Cheryl,Stone,Female,Money,'Data Coordiator',26.82961,116.40902,Black,53031.74,Psychosis,Pain,Bruise,Rey,1
+104,Andrew,Jones,Male,Japanese,'Automation Specialist I',41.85,-8.5333,Asian,123877.93,Depression,Headache,Rash,Anderson,4
+105,Evelyn,Harper,Female,French,'Actuary',34.52813,69.17233,Asian,63098.90,Depression,Aching,Bruise,Carson,5
+106,John,Matthews,Male,Money,'Research Assistant III',54.98806,35.31083,Latino,117629.00,Depression,Aching,Rash,Anderson,5
+107,Arthur,Knight,Male,English,'Human Resources Assistant III',52.65599,41.88461,Native_American,57875.61,Depression,Pain,Bruise,Blackwell,2
+108,Nancy,Evans,Female,Money,'Marketing Assistant',48.112,-1.6743,White,215399.67,Depression,Overheating,Bruise,Rey,3
+109,Brian,Stevens,Male,French,'Web Developer I',-28.872,27.87506,Latino,133885.13,Psychosis,Aching,Rash,Rey,4
+110,Jerry,Ford,Male,Money,'Quality Engineer',24.80759,115.47734,Ugly,175191.55,Depression,Pain,Bleeding,Drew,1
+111,Gloria,Tucker,Female,Money,'Dental Hygienist',-23.54083,-46.36861,Native_American,222503.90,Depression,Overheating,Bleeding,Drew,4
+112,Nicole,Jacobs,Female,French,'Electrical Engineer',49.67457,19.37482,Ugly,138790.12,Anxiety,Aching,Rash,Drew,3
+113,Stephanie,Mitchell,Female,Money,'Electrical Engineer',13.9258,121.2349,Latino,228026.12,Anxiety,Headache,Bruise,Rey,5
+114,Chris,Gomez,Male,French,'Electrical Engineer',-34.12662,-63.39119,Asian,254927.89,Anxiety,Headache,Bleeding,Carson,4
+115,Jeremy,White,Male,Mandarin,'Desktop Support Technician',52.57436,39.4966,White,214452.73,Psychosis,Headache,Bleeding,Drew,4
+116,Timothy,Arnold,Male,English,'Payment Adjustment Coordinator',42.6,26.68333,Latino,122713.60,Psychosis,Aching,Bruise,Blackwell,4
+117,Ann,Mitchell,Female,Japanese,'Senior Cost Accountant',-11.76667,27.23333,Asian,294524.71,Psychosis,Aching,Rash,Carson,1
+118,Charles,Kelley,Male,Klingon,'Human Resources Manager',3.80958,43.24628,Black,207885.75,Anxiety,Nausea,Bruise,Cooley,4
+119,Nicholas,Hudson,Male,Klingon,'Assistant Professor',28.43905,48.49132,Black,296892.12,Anxiety,Nausea,Rash,Carson,1
+120,Donna,Ross,Female,Japanese,'Cost Accountant',26.6654,-80.0929,Asian,175396.14,Depression,Aching,Bruise,Rey,1
+121,Angela,Perez,Female,Japanese,'Research Nurse',58.7238,11.3259,Ugly,211995.43,Depression,Headache,Bleeding,Rey,2
+122,Craig,Johnson,Male,Klingon,'Chief Design Engineer',32.01417,120.2625,Ugly,11844.83,Anxiety,Aching,Bruise,Cooley,4
+123,Robert,Sullivan,Male,Mandarin,'Web Developer III',-25.40514,-57.28546,Native_American,182943.48,Depression,Overheating,Bruise,Cooley,2
+124,Kathryn,Young,Female,Money,'Administrative Assistant III',-0.96212,-80.71271,White,254383.03,Depression,Headache,Bleeding,Drew,3
+125,Rebecca,Collins,Female,French,'Media Manager II',-10.93333,35.01667,Black,174042.90,Depression,Overheating,Bleeding,Rey,2
+126,Craig,Russell,Male,Japanese,'Financial Analyst',-2.0341,147.27173,Native_American,217092.82,Anxiety,Nausea,Rash,Urbani,5
+127,Johnny,Lawson,Male,English,'Sales Associate',39.15667,26.52167,Native_American,99868.06,Anxiety,Pain,Bruise,Carson,2
+128,Margaret,Hawkins,Female,French,'Sales Representative',45.9,6.1,Asian,253406.08,Anxiety,Headache,Rash,Rey,2
+129,Janet,Holmes,Female,Japanese,'Quality Engineer',13.1029,123.6999,Native_American,172256.64,Anxiety,Pain,Rash,Drew,3
+130,Philip,Cox,Male,Mandarin,'Junior Executive',29.9994,108.10913,Native_American,81221.59,Anxiety,Overheating,Rash,Blackwell,4
+131,Andrea,Woods,Female,Klingon,'Staff Accountant I',36.77957,137.07576,Black,90492.79,Depression,Aching,Bleeding,Cooley,5
+132,Phillip,Murray,Male,French,'Graphic Designer',21.83184,110.57466,Native_American,54858.81,Anxiety,Overheating,Rash,Urbani,5
+133,Louise,Baker,Female,Mandarin,'Geological Engineer',13.859,123.7675,Native_American,185974.79,Anxiety,Pain,Bruise,Carson,5
+134,Nancy,Oliver,Female,French,'Database Administrator IV',16.53389,120.39667,Native_American,163608.92,Depression,Aching,Bruise,Urbani,5
+135,Jennifer,Adams,Female,English,'Assistant Professor',-7.2758,106.9909,Native_American,213219.02,Anxiety,Pain,Rash,Rey,5
+136,Fred,Banks,Male,French,'Research Nurse',47.5,19.0833,Ugly,216632.14,Psychosis,Aching,Bleeding,Rey,5
+137,Donna,Lawrence,Female,Mandarin,'Product Engineer',34.7,119.36667,Asian,1184.77,Depression,Headache,Rash,Rey,4
+138,Jack,Perez,Male,Japanese,'Safety Technician III',27.22583,119.46722,Ugly,277173.52,Psychosis,Aching,Rash,Rey,4
+139,Anthony,Morris,Male,Klingon,'Quality Control Specialist',15.0193,120.8511,White,274593.64,Psychosis,Nausea,Bruise,Drew,4
+140,Maria,Riley,Female,Japanese,'Senior Sales Associate',22.2,114.13333,White,143343.95,Psychosis,Headache,Bleeding,Cooley,4
+141,Sean,Gonzales,Male,English,'Health Coach III',6.92306,125.77583,Asian,271634.75,Depression,Pain,Bleeding,Carson,1
+142,Martha,Ward,Female,Japanese,'Staff Accountant III',39.4747,-8.196,Ugly,286176.11,Anxiety,Aching,Rash,Blackwell,5
+143,Timothy,Fox,Male,Japanese,'Account Executive',32.47974,106.29229,Native_American,219803.84,Anxiety,Overheating,Bleeding,Rey,1
+144,Jimmy,Little,Male,Japanese,'Engineer IV',35.0431,37.46442,White,70958.61,Anxiety,Overheating,Bruise,Anderson,1
+145,Jennifer,Moreno,Female,Japanese,'Human Resources Manager',32.11849,120.42757,Black,282808.97,Psychosis,Headache,Bruise,Rey,5
+146,Tammy,Williamson,Female,Klingon,'Programmer Analyst IV',16.09398,103.00998,White,141075.08,Depression,Aching,Rash,Anderson,3
+147,Jason,Harrison,Male,Money,'Account Coordinator',38.13775,114.37667,Latino,243187.74,Depression,Aching,Bleeding,Anderson,5
+148,Norma,Holmes,Female,French,'Account Representative I',-4.05421,103.87668,Ugly,3087.78,Anxiety,Aching,Bleeding,Cooley,4
+149,Margaret,Lewis,Female,French,'Mechanical Systems Engineer',-33.17538,-64.99331,Native_American,103032.56,Anxiety,Nausea,Bruise,Rey,5
+150,John,Sanchez,Male,French,'VP Sales',29.20909,103.94556,Ugly,89642.69,Depression,Aching,Bleeding,Urbani,4
+151,Phyllis,Kim,Female,Money,'Librarian',48.9909,29.8047,Black,265612.70,Depression,Headache,Bruise,Drew,2
+152,Russell,Stanley,Male,Spanish,'Quality Engineer',30.43919,108.53398,Ugly,296247.68,Anxiety,Headache,Bleeding,Carson,1
+153,Marie,Cooper,Female,Japanese,'Tax Accountant',24.18502,114.35992,Latino,216782.32,Anxiety,Overheating,Bruise,Carson,3
+154,Anthony,Welch,Male,Money,'Nurse Practicioner',46.68073,-64.88044,Asian,13103.96,Psychosis,Nausea,Bruise,Anderson,3
+155,Jason,Sims,Male,French,'Nuclear Power Engineer',12.68781,7.19579,White,132820.80,Psychosis,Pain,Bleeding,Drew,1
+156,Alan,Peterson,Male,English,'Budget/Accounting Analyst IV',29.91525,115.41432,Black,142507.09,Psychosis,Pain,Bleeding,Urbani,4
+157,Joan,Gardner,Female,Spanish,'Engineer II',21.35494,17.00121,Black,233060.93,Psychosis,Overheating,Rash,Anderson,4
+158,Paula,Lawson,Female,Japanese,'Assistant Manager',-7.1478,108.3789,Latino,277751.64,Depression,Aching,Rash,Drew,3
+159,Shawn,Cooper,Male,Japanese,'Pharmacist',23.15662,115.96648,Black,9751.15,Anxiety,Nausea,Rash,Anderson,5
+160,Sharon,Black,Female,Klingon,'Statistician I',23.68477,-15.95798,Ugly,89119.33,Depression,Overheating,Rash,Cooley,1
+161,Louise,Morgan,Female,Mandarin,'Marketing Assistant',25.36457,49.56532,Ugly,250693.34,Depression,Pain,Rash,Drew,2
+162,Diane,Peterson,Female,Japanese,'VP Accounting',0.80739,-77.57216,Latino,140229.38,Anxiety,Headache,Rash,Carson,2
+163,Jeffrey,Tucker,Male,French,'Occupational Therapist',-3.56694,-80.45153,Ugly,215953.85,Anxiety,Overheating,Bleeding,Carson,2
+164,Lillian,Bowman,Female,Money,'VP Sales',16.51667,-90.16667,Black,298788.89,Psychosis,Aching,Bruise,Anderson,2
+165,Amanda,Freeman,Female,Mandarin,'Web Designer I',29.22801,119.35284,Black,143823.96,Psychosis,Headache,Bruise,Anderson,2
+166,Doris,Ellis,Female,Japanese,'Marketing Manager',-24.00583,-48.34944,Latino,192935.67,Depression,Headache,Rash,Cooley,4
+167,Virginia,Robinson,Female,Spanish,'Nuclear Power Engineer',57.283,55.4589,Asian,5687.74,Depression,Pain,Bruise,Blackwell,2
+168,Steven,Perkins,Male,Money,'Health Coach I',27.81112,116.5249,Asian,118048.22,Depression,Pain,Bleeding,Anderson,2
+169,Aaron,Phillips,Male,Money,'Statistician I',45.76994,20.2839,Ugly,7481.89,Anxiety,Nausea,Bleeding,Carson,2
+170,Jean,Mason,Female,Money,'Director of Sales',10.16667,38.13333,Ugly,67609.36,Depression,Headache,Bleeding,Anderson,4
+171,Stephanie,Green,Female,Spanish,'Geologist I',55.6759,12.5655,Ugly,253874.64,Depression,Aching,Bleeding,Rey,4
+172,Richard,Powell,Male,Money,'Social Worker',8.0362,79.8283,White,214708.50,Psychosis,Overheating,Bleeding,Blackwell,1
+173,Joyce,Welch,Female,English,'Geological Engineer',46.32312,38.74724,Latino,221724.83,Anxiety,Overheating,Bruise,Urbani,3
+174,Paula,Oliver,Female,Mandarin,'Administrative Officer',7.0172,125.992,Ugly,239950.71,Depression,Aching,Bruise,Blackwell,3
+175,Victor,Franklin,Male,Spanish,'Director of Sales',22.97533,115.33179,Ugly,285548.84,Psychosis,Aching,Rash,Cooley,5
+176,Theresa,Stewart,Female,English,'Assistant Media Planner',53.4172,83.5747,Native_American,10513.70,Psychosis,Aching,Rash,Cooley,3
+177,Anthony,Hughes,Male,French,'Sales Associate',-25.25,-57.16667,Latino,207337.01,Depression,Nausea,Bruise,Drew,3
+178,Joshua,Reynolds,Male,Spanish,'Senior Sales Associate',-19.59333,-46.94056,Latino,159485.91,Anxiety,Overheating,Bleeding,Carson,1
+179,Billy,Williamson,Male,French,'Mechanical Systems Engineer',6.9909,79.883,Asian,262161.29,Depression,Overheating,Bleeding,Anderson,1
+180,Chris,Hunt,Male,Spanish,'Programmer II',48.76688,-80.68307,Black,132087.13,Anxiety,Headache,Bleeding,Blackwell,1
+181,Anna,Wright,Female,English,'Sales Representative',43.7028,45.24154,Latino,119511.69,Psychosis,Aching,Bruise,Rey,2
+182,Betty,Mills,Female,Spanish,'Actuary',61.19472,62.86889,Ugly,86585.98,Psychosis,Overheating,Bleeding,Drew,1
+183,Michael,Hamilton,Male,Money,'Analog Circuit Design manager',28.26648,103.56838,White,203560.25,Anxiety,Overheating,Bleeding,Urbani,5
+184,Denise,Gordon,Female,Money,'Senior Sales Associate',2.71861,-67.55992,Latino,67125.21,Anxiety,Overheating,Rash,Anderson,5
+185,Andrea,King,Female,English,'Structural Analysis Engineer',28.72219,108.11448,Asian,235053.44,Psychosis,Pain,Bleeding,Rey,4
+186,Mary,Weaver,Female,Mandarin,'Graphic Designer',7.49944,125.67361,Asian,264452.92,Psychosis,Headache,Bleeding,Drew,2
+187,Betty,Greene,Female,Japanese,'Assistant Professor',36.40394,58.03948,Black,110213.59,Psychosis,Pain,Bruise,Anderson,1
+188,Patrick,Washington,Male,Klingon,'Recruiter',40.72667,19.75722,White,69631.29,Psychosis,Headache,Bruise,Cooley,1
+190,Diana,Payne,Female,English,'Payment Adjustment Coordinator',-4.99707,12.9484,Black,79387.39,Depression,Nausea,Bruise,Drew,2
+191,Carolyn,White,Female,Spanish,'Nurse Practicioner',-7.5981,108.0169,Asian,61397.88,Depression,Headache,Bruise,Cooley,4
+192,Ronald,Ward,Male,Mandarin,'Systems Administrator IV',41.2075,-8.583,Ugly,5200.73,Depression,Headache,Bruise,Blackwell,2
+193,Russell,Franklin,Male,French,'Professor',10.53472,107.40202,Latino,226342.55,Depression,Pain,Bleeding,Cooley,3
+194,Charles,Warren,Male,Mandarin,'Associate Professor',-10.5775,-75.40167,Ugly,97506.74,Depression,Aching,Bruise,Blackwell,4
+195,Jessica,Hudson,Female,Money,'Biostatistician II',11.42406,5.22879,Ugly,258492.30,Psychosis,Aching,Bruise,Drew,1
+196,William,Hall,Male,French,'Software Consultant',31.01423,114.74223,Black,80414.97,Anxiety,Aching,Bleeding,Anderson,3
+197,Cheryl,Lee,Female,Money,'Desktop Support Technician',-7.74167,-35.22778,Latino,108996.78,Anxiety,Overheating,Bleeding,Cooley,5
+198,Jonathan,Ward,Male,Spanish,'Electrical Engineer',-6.598,106.2248,Latino,54878.92,Anxiety,Nausea,Bleeding,Urbani,1
+199,Henry,Russell,Male,English,'Food Chemist',-8.52425,179.19417,Ugly,172998.22,Depression,Aching,Bleeding,Rey,5
+200,Wayne,Rivera,Male,Klingon,'Help Desk Technician',40.5,95.8,Native_American,58618.26,Psychosis,Pain,Bruise,Urbani,4
+201,Andrea,Nguyen,Female,Klingon,'VP Accounting',57.41905,34.97658,Ugly,26553.11,Psychosis,Headache,Rash,Rey,5
+202,Judith,Jackson,Female,English,'Account Coordinator',48.88199,101.23953,White,244070.35,Depression,Headache,Rash,Rey,4
+203,Emily,Bradley,Female,English,'Clinical Specialist',23.24018,91.12143,Black,55555.09,Depression,Aching,Bleeding,Carson,4
+204,Sean,Baker,Male,Klingon,'Director of Sales',15.3,-90.06667,White,196101.85,Anxiety,Headache,Rash,Anderson,2
+205,Eric,Cole,Male,Japanese,'Teacher',20.3545,-101.0188,Latino,120553.10,Depression,Aching,Bruise,Carson,4
+206,Joan,Davis,Female,Japanese,'VP Quality Control',29.18647,116.67044,Native_American,299670.74,Psychosis,Nausea,Rash,Drew,2
+207,Frances,Carpenter,Female,French,'Automation Specialist IV',-13.99328,34.51566,Latino,250759.64,Depression,Aching,Bruise,Drew,2
+208,Melissa,Nelson,Female,English,'Health Coach II',48.25,118.2,Black,16051.65,Depression,Overheating,Bruise,Blackwell,1
+209,Terry,Freeman,Male,French,'Librarian',58.7002,59.4839,Ugly,37246.84,Anxiety,Overheating,Bleeding,Blackwell,1
+210,Jason,Burton,Male,Money,'Structural Engineer',22.81667,108.31667,White,163933.03,Depression,Pain,Rash,Anderson,1
+211,Philip,Ferguson,Male,Klingon,'Data Coordiator',23.22385,114.03808,White,222684.91,Depression,Pain,Bleeding,Drew,4
+212,Louis,Woods,Male,French,'Accountant IV',39.5167,-8.5333,Black,97422.70,Psychosis,Aching,Bleeding,Anderson,3
+213,Maria,Wheeler,Female,Spanish,'Graphic Designer',25.69845,115.59398,Latino,276148.52,Anxiety,Headache,Bleeding,Cooley,2
+214,Judy,Wagner,Female,Mandarin,'Recruiter',30.5488,63.7888,Ugly,206609.00,Anxiety,Overheating,Rash,Anderson,3
+215,Michael,Peters,Male,Mandarin,'Registered Nurse',49.97143,82.60586,Asian,286774.96,Anxiety,Headache,Rash,Anderson,4
+216,Margaret,Jackson,Female,Japanese,'Marketing Manager',52.04072,18.91786,Black,100195.36,Anxiety,Overheating,Bruise,Rey,3
+217,Steven,Morales,Male,Klingon,'Clinical Specialist',38.4,-8.7667,White,90623.40,Psychosis,Pain,Rash,Blackwell,1
+218,Pamela,Fields,Female,Klingon,'VP Sales',29.5791,50.517,White,280938.99,Depression,Aching,Bruise,Cooley,3
+219,Jack,Frazier,Male,Klingon,'Civil Engineer',46.88056,40.14657,Latino,178348.44,Depression,Headache,Bruise,Drew,5
+220,Aaron,Reyes,Male,French,'Legal Assistant',38,23.8,Asian,220447.22,Depression,Aching,Bleeding,Rey,5
+221,Gloria,Martin,Female,Mandarin,'Software Consultant',32.90594,101.70625,White,256535.63,Depression,Headache,Rash,Drew,4
+222,Martha,Palmer,Female,French,'Quality Control Specialist',39.4667,-8.75,Native_American,173815.38,Anxiety,Overheating,Bruise,Drew,5
+223,Rebecca,Brooks,Female,Spanish,'Mechanical Systems Engineer',-13.45836,25.8338,Native_American,15720.92,Depression,Overheating,Rash,Drew,2
+224,Louis,Dixon,Male,Spanish,'Associate Professor',48.4,-4.4833,Native_American,13882.81,Psychosis,Nausea,Bruise,Cooley,5
+225,Larry,Cruz,Male,Money,'Automation Specialist II',49.52984,15.22181,Ugly,149748.66,Psychosis,Pain,Bruise,Rey,4
+226,Emily,Wells,Female,Mandarin,'Internal Auditor',42.04361,127.10722,Ugly,173178.07,Depression,Nausea,Bruise,Urbani,3
+227,Ryan,Clark,Male,Japanese,'Registered Nurse',46.98821,127.99073,Ugly,79789.82,Depression,Nausea,Bruise,Carson,2
+228,Henry,Lynch,Male,Klingon,'Senior Cost Accountant',-6.40278,106.77444,Ugly,134100.65,Depression,Nausea,Rash,Carson,2
+229,Kathleen,Adams,Female,Spanish,'Compensation Analyst',51.35639,99.34444,White,183987.76,Psychosis,Nausea,Bleeding,Cooley,4
+230,Arthur,Jones,Male,English,'Human Resources Assistant IV',-7.2078,108.6321,Latino,27231.56,Psychosis,Pain,Bruise,Drew,1
+231,Stephanie,Thomas,Female,Money,'Help Desk Technician',-19.41361,-42.41944,Native_American,260227.88,Anxiety,Aching,Bleeding,Cooley,1
+232,Bobby,Wright,Male,English,'Structural Analysis Engineer',51.41853,36.7499,Asian,99210.64,Anxiety,Pain,Bleeding,Cooley,5
+233,Wayne,Williamson,Male,Spanish,'Electrical Engineer',39.71667,140.11667,Latino,57969.89,Psychosis,Pain,Bleeding,Anderson,5
+234,Fred,Garcia,Male,Spanish,'Marketing Manager',49.05825,44.829,Latino,283235.48,Psychosis,Overheating,Rash,Urbani,4
+235,Rachel,Hansen,Female,French,'Marketing Assistant',18.45,-69.6,Latino,146093.34,Psychosis,Headache,Rash,Drew,4
+236,Ronald,Garrett,Male,Mandarin,'Account Coordinator',49.64093,24.28874,Native_American,24078.32,Anxiety,Nausea,Bleeding,Cooley,4
+237,Gloria,Ruiz,Female,Money,'VP Marketing',54.06147,15.26475,Black,104772.76,Depression,Aching,Bruise,Cooley,4
+238,Gloria,Clark,Female,French,'Marketing Manager',38.8336,-76.8777,Ugly,126780.42,Psychosis,Overheating,Bleeding,Blackwell,5
+239,Linda,Hamilton,Female,French,'Software Engineer IV',33.48833,132.35417,Native_American,209455.74,Psychosis,Headache,Bleeding,Rey,1
+240,Debra,Ellis,Female,Klingon,'Teacher',53.4923,29.3356,Latino,255800.39,Psychosis,Nausea,Bruise,Drew,2
+241,Ann,Ray,Female,French,'Project Manager',-6.94,112.8383,Ugly,60506.86,Depression,Overheating,Bleeding,Carson,2
+242,Tammy,Graham,Female,English,'Structural Engineer',15.18533,43.51122,Black,135862.96,Depression,Pain,Rash,Urbani,1
+243,Andrea,Ramirez,Female,Japanese,'Executive Secretary',15.54602,120.95959,Latino,181619.49,Depression,Pain,Rash,Rey,5
+244,Karen,Simmons,Female,Japanese,'Senior Editor',8.4,-80.35,Ugly,171990.00,Anxiety,Headache,Rash,Drew,3
+245,Earl,Parker,Male,Money,'Operator',29.84603,121.68735,Native_American,96590.72,Depression,Overheating,Bleeding,Carson,2
+246,Catherine,Lawrence,Female,Klingon,'Director of Sales',35.15472,126.91556,Latino,85083.32,Depression,Overheating,Bruise,Drew,3
+247,Douglas,Miller,Male,French,'Professor',24.07083,116.35972,White,211581.74,Depression,Headache,Rash,Cooley,2
+248,Russell,Olson,Male,Klingon,'Software Test Engineer I',35.87306,14.49889,Black,243.57,Psychosis,Aching,Rash,Rey,4
+249,Julia,Hill,Female,Japanese,'Software Engineer II',-8.7818,120.7152,White,214572.63,Psychosis,Headache,Bruise,Drew,3
+250,Cynthia,Jordan,Female,Money,'Help Desk Technician',28.15313,115.66062,Ugly,189726.33,Anxiety,Pain,Bleeding,Cooley,2
+251,Betty,Fisher,Female,Japanese,'Junior Executive',28.42312,114.91437,White,64585.95,Depression,Pain,Rash,Anderson,4
+252,Justin,Cole,Male,Japanese,'Software Consultant',39.60722,21.81722,Latino,111389.38,Psychosis,Aching,Rash,Urbani,5
+253,Theresa,Garrett,Female,Spanish,'Civil Engineer',42.05056,20.5525,Ugly,272068.03,Depression,Pain,Bruise,Drew,3
+254,Kimberly,Snyder,Female,Money,'Staff Scientist',59.1677,18.1448,Latino,233645.62,Depression,Aching,Bleeding,Blackwell,1
+255,Wanda,Jordan,Female,Klingon,'Editor',48.8646,2.3984,White,184160.01,Depression,Aching,Rash,Drew,2
+256,Gregory,Gutierrez,Male,Klingon,'Clinical Specialist',14.90598,105.07836,Latino,240015.85,Depression,Overheating,Bruise,Drew,1
+257,Stephen,Hamilton,Male,Klingon,'Developer II',43.85,26.45,Ugly,79865.50,Anxiety,Overheating,Bruise,Carson,4
+258,Debra,Martin,Female,French,'Executive Secretary',48.3,4.0833,Asian,202635.18,Depression,Aching,Bruise,Drew,3
+259,Christopher,Hall,Male,Mandarin,'Human Resources Manager',36.68333,139.96667,Asian,184392.97,Anxiety,Overheating,Rash,Blackwell,5
+260,Annie,Hawkins,Female,Money,'Desktop Support Technician',45.76352,127.838,Ugly,80262.05,Anxiety,Pain,Bleeding,Urbani,1
+261,Steve,Davis,Male,Spanish,'Director of Sales',49.62056,6.07333,Black,217113.15,Depression,Pain,Bleeding,Drew,4
+262,Joyce,Burns,Female,Spanish,'Executive Secretary',-6.2479,106.107,White,144359.26,Psychosis,Overheating,Rash,Rey,2
+263,Pamela,Miller,Female,Money,'Help Desk Technician',34.36556,107.63706,Ugly,64035.45,Psychosis,Overheating,Bruise,Cooley,4
+264,James,Anderson,Male,English,'Account Executive',38.6667,-9.2,Latino,4503.66,Anxiety,Nausea,Bleeding,Rey,2
+265,Sandra,Hunter,Female,French,'Internal Auditor',43.72583,20.68944,Asian,286976.95,Psychosis,Pain,Bruise,Drew,2
+266,Dennis,Bradley,Male,French,'Business Systems Development Analyst',59.3326,18.0649,White,107368.28,Depression,Overheating,Bruise,Drew,4
+267,Linda,Long,Female,Money,'Office Assistant II',21.0186,-101.2591,Asian,36866.35,Anxiety,Headache,Bruise,Urbani,5
+268,Andrea,Gonzalez,Female,Japanese,'Social Worker',-47.75034,-65.89382,Ugly,256223.23,Psychosis,Overheating,Rash,Carson,1
+269,Sara,Knight,Female,French,'Help Desk Operator',-8.08333,-79.11667,Native_American,42625.65,Depression,Overheating,Rash,Blackwell,2
+270,Chris,Williamson,Male,Mandarin,'Data Coordiator',48.11814,23.76588,Ugly,15587.50,Anxiety,Overheating,Bleeding,Anderson,5
+271,Antonio,Ortiz,Male,English,'Financial Advisor',42.62679,122.96776,White,217994.45,Psychosis,Headache,Rash,Blackwell,2
+272,Judith,Hanson,Female,English,'Computer Systems Analyst I',13.58333,123.38333,Ugly,226310.19,Anxiety,Headache,Bruise,Drew,2
+273,Kelly,Knight,Female,Spanish,'Human Resources Manager',-6.7751,111.2159,Black,2873.94,Psychosis,Nausea,Bleeding,Cooley,4
+274,Nancy,Hayes,Female,Japanese,'Occupational Therapist',37.47355,70.61617,Native_American,68620.61,Depression,Headache,Bruise,Rey,4
+275,Philip,Johnson,Male,English,'Sales Representative',31.60732,118.98023,Latino,146206.55,Anxiety,Pain,Bleeding,Urbani,5
+276,Timothy,Simpson,Male,English,'Software Test Engineer IV',11.99339,105.4635,Ugly,246202.40,Depression,Headache,Bruise,Carson,1
+277,Irene,Rogers,Female,Mandarin,'Accountant I',13.74462,102.31863,Native_American,4404.08,Anxiety,Nausea,Rash,Anderson,1
+278,Alan,Kennedy,Male,French,'Assistant Media Planner',14.53333,-91.56667,Asian,279672.68,Anxiety,Overheating,Bruise,Carson,1
+279,Louise,Greene,Female,Klingon,'Product Engineer',39.5,-9.1,Black,118710.80,Psychosis,Overheating,Rash,Carson,2
+280,Cynthia,Kelley,Female,English,'Automation Specialist IV',38.03381,23.82962,Ugly,198819.87,Anxiety,Headache,Bruise,Urbani,2
+281,Annie,Grant,Female,Japanese,'Web Developer I',53.44972,89.52722,Ugly,202770.74,Depression,Pain,Bleeding,Blackwell,1
+282,Adam,Banks,Male,French,'Paralegal',-2.7381,103.6401,Ugly,1736.83,Psychosis,Overheating,Bruise,Anderson,4
+283,Douglas,Johnston,Male,Spanish,'Structural Engineer',58.4806,16.3222,Asian,75849.83,Psychosis,Overheating,Bruise,Urbani,3
+284,Joan,Dixon,Female,Japanese,'Computer Systems Analyst I',-24.50944,-48.8425,Ugly,184604.15,Depression,Aching,Bleeding,Blackwell,2
+285,Paul,Reed,Male,Klingon,'Budget/Accounting Analyst III',43.58632,15.92302,White,123069.90,Anxiety,Aching,Bleeding,Anderson,5
+286,Jason,Gomez,Male,English,'Data Coordiator',50.95783,31.92085,Black,15089.64,Anxiety,Aching,Bruise,Drew,5
+287,Matthew,Tucker,Male,Spanish,'Internal Auditor',25.15895,118.4936,White,199736.92,Anxiety,Overheating,Bruise,Blackwell,1
+288,Jacqueline,Freeman,Female,Klingon,'Structural Analysis Engineer',-10.5075,-39.01583,Native_American,13653.90,Anxiety,Pain,Bruise,Anderson,5
+289,Kevin,Payne,Male,English,'Graphic Designer',50.293,2.7819,Black,220189.77,Psychosis,Pain,Bleeding,Urbani,3
+290,Benjamin,Reynolds,Male,Mandarin,'Administrative Officer',8.5634,0.98399,Ugly,214644.85,Depression,Nausea,Bleeding,Rey,3
+291,Jack,Carroll,Male,Mandarin,'Quality Control Specialist',15.95395,120.48949,Asian,247956.67,Depression,Headache,Bruise,Rey,1
+292,Jesse,Clark,Male,Spanish,'Information Systems Manager',61.15,28.05,Ugly,283722.33,Anxiety,Pain,Bleeding,Urbani,2
+293,Ashley,Cooper,Female,Spanish,'Administrative Assistant II',34.20303,108.65139,Black,56282.62,Psychosis,Nausea,Bleeding,Rey,2
+294,Kenneth,Ortiz,Male,Spanish,'Software Test Engineer I',28.75356,120.52012,Ugly,10028.41,Depression,Pain,Rash,Anderson,1
+295,Janice,Lawrence,Female,Mandarin,'Professor',53.6884,23.8258,Native_American,99778.38,Psychosis,Aching,Bleeding,Cooley,1
+296,Eugene,Harvey,Male,Mandarin,'Developer I',33.8356,-117.9132,Ugly,213115.99,Psychosis,Nausea,Bruise,Anderson,4
+297,Denise,Gutierrez,Female,Money,'General Manager',-16.03352,34.80091,White,680.88,Psychosis,Pain,Rash,Drew,2
+298,Phyllis,Perkins,Female,French,'Nuclear Power Engineer',-36.77698,-59.85854,Asian,16059.63,Anxiety,Overheating,Bruise,Drew,5
+299,Marie,Riley,Female,Japanese,'Paralegal',34.98333,136.98333,White,60395.58,Psychosis,Nausea,Bleeding,Anderson,2
+300,Heather,Washington,Female,Klingon,'Accounting Assistant II',14.98333,102.65,Native_American,100612.68,Anxiety,Aching,Bleeding,Drew,5
+301,Martha,Hanson,Female,Japanese,'Physical Therapy Assistant',49.66644,32.32932,Latino,23390.80,Anxiety,Overheating,Bruise,Urbani,4
+302,Charles,Owens,Male,English,'Account Coordinator',-10.5817,123.259,Asian,296021.28,Depression,Headache,Bleeding,Anderson,4
+303,Phillip,Simmons,Male,Klingon,'VP Accounting',46.41139,16.15444,Ugly,28913.77,Psychosis,Nausea,Bleeding,Cooley,3
+304,Judith,Cook,Female,English,'Human Resources Manager',31.71862,119.36988,Native_American,257460.33,Anxiety,Aching,Bruise,Urbani,5
+305,Beverly,Torres,Female,Klingon,'Research Assistant III',43.50646,18.77854,Latino,72436.50,Depression,Nausea,Bleeding,Urbani,4
+306,Jean,Rose,Female,English,'Geological Engineer',45.97778,15.09556,White,250215.58,Psychosis,Overheating,Bleeding,Blackwell,2
+307,Shawn,Jones,Male,Spanish,'Quality Control Specialist',38.1071,-87.5256,Latino,294538.06,Depression,Overheating,Bruise,Cooley,2
+308,Jack,Hughes,Male,Japanese,'Sales Associate',69.6489,18.9551,Ugly,21594.48,Psychosis,Aching,Rash,Anderson,1
+309,Rebecca,Evans,Female,Mandarin,'Statistician III',48.90102,17.3168,Ugly,241762.35,Psychosis,Aching,Bruise,Cooley,3
+310,Brandon,Porter,Male,Klingon,'Human Resources Assistant I',49.19385,35.23943,Ugly,93879.93,Psychosis,Aching,Bleeding,Urbani,3
+311,Anna,West,Female,Japanese,'Nurse',44.88155,19.76374,Latino,142530.62,Psychosis,Pain,Bleeding,Drew,2
+312,Craig,Mason,Male,Klingon,'Financial Analyst',13.70528,100.34923,Black,71240.39,Psychosis,Overheating,Bruise,Carson,3
+313,Paul,Price,Male,French,'Accounting Assistant I',40.05175,123.10946,Black,3787.73,Depression,Aching,Rash,Blackwell,1
+314,Mark,Moore,Male,French,'Information Systems Manager',40.84352,22.30178,Latino,285756.15,Anxiety,Overheating,Rash,Blackwell,4
+315,Nicole,Cunningham,Female,Mandarin,'Speech Pathologist',16.98114,100.33194,Black,16414.18,Depression,Aching,Bruise,Rey,3
+316,Justin,Arnold,Male,Money,'Quality Control Specialist',50.0622,-96.51669,Black,65355.56,Anxiety,Overheating,Bleeding,Cooley,5
+317,Phyllis,Banks,Female,English,'Assistant Professor',1.09679,36.69799,Asian,168989.76,Psychosis,Overheating,Rash,Drew,5
+318,Kimberly,Carter,Female,Money,'Health Coach I',57.7072,11.9668,White,177800.63,Depression,Aching,Bleeding,Carson,5
+319,Denise,Hughes,Female,Mandarin,'Research Assistant IV',46.3231,-0.4588,Black,161398.98,Anxiety,Nausea,Bleeding,Cooley,4
+320,Joe,Duncan,Male,Spanish,'Account Executive',40.99426,71.66092,Asian,36915.07,Psychosis,Pain,Bruise,Cooley,2
+321,Teresa,Thomas,Female,French,'Paralegal',50.37322,18.00427,Asian,252084.62,Anxiety,Overheating,Rash,Blackwell,2
+322,Chris,Garrett,Male,Spanish,'Civil Engineer',47.15,15.5333,White,172337.31,Psychosis,Overheating,Bleeding,Anderson,4
+323,Pamela,Ward,Female,Klingon,'Nuclear Power Engineer',52.79923,16.73347,Ugly,276786.10,Anxiety,Nausea,Bleeding,Drew,2
+324,Terry,Duncan,Male,Japanese,'Systems Administrator III',34.22694,108.85556,Native_American,122091.22,Psychosis,Headache,Bleeding,Drew,2
+325,Brian,Stewart,Male,English,'Human Resources Assistant IV',50.68338,36.23309,Latino,146193.42,Anxiety,Nausea,Bruise,Carson,5
+326,Kelly,Henry,Female,English,'Teacher',33.8356,-117.9132,Asian,109526.00,Psychosis,Headache,Bruise,Urbani,2
+327,Cynthia,Warren,Female,Spanish,'Automation Specialist II',24.03414,112.03911,Asian,149358.87,Psychosis,Pain,Rash,Drew,3
+328,Kenneth,Scott,Male,Mandarin,'Financial Analyst',19.5456,-99.0697,Asian,118807.56,Depression,Nausea,Bruise,Rey,5
+329,Roy,Ellis,Male,Money,'Analyst Programmer',49.8537,19.31568,Ugly,165990.14,Depression,Nausea,Rash,Cooley,4
+330,Lillian,Riley,Female,French,'Account Executive',21.4183,-97.6509,Latino,190733.98,Depression,Headache,Bleeding,Anderson,3
+331,Catherine,Scott,Female,Spanish,'Junior Executive',41.78007,47.58896,Ugly,292527.39,Anxiety,Aching,Rash,Cooley,3
+332,Todd,Johnston,Male,Spanish,'VP Quality Control',15.35,-86.68333,Black,199577.15,Psychosis,Pain,Rash,Cooley,1
+333,Jessica,Hunter,Female,Mandarin,'Senior Cost Accountant',24.73798,118.25307,Latino,96456.03,Depression,Nausea,Bleeding,Urbani,3
+334,David,Knight,Male,Spanish,'Structural Engineer',-8.348,122.9598,White,273571.91,Anxiety,Headache,Bruise,Drew,1
+335,John,Hughes,Male,Klingon,'VP Product Management',15.9071,120.9907,Asian,98355.46,Anxiety,Overheating,Rash,Carson,2
+336,Maria,Reed,Female,Japanese,'Computer Systems Analyst IV',29.7877,105.85195,Native_American,121703.59,Anxiety,Pain,Bleeding,Carson,4
+337,Laura,Fields,Female,Money,'Technical Writer',47.21304,-67.92847,Asian,284366.76,Anxiety,Overheating,Bruise,Anderson,2
+338,Kimberly,Nguyen,Female,Money,'Office Assistant III',53.58625,15.30977,Asian,18828.90,Depression,Pain,Rash,Cooley,5
+339,Nancy,Ellis,Female,Mandarin,'Accountant IV',45.4736,4.5254,Ugly,69797.19,Depression,Nausea,Bruise,Cooley,5
+340,Joe,Howell,Male,French,'Developer III',-38.37394,-60.27978,White,100871.99,Anxiety,Aching,Rash,Blackwell,2
+341,Charles,Mills,Male,Spanish,'Database Administrator I',15.25976,-61.37452,Ugly,190958.60,Depression,Overheating,Rash,Drew,5
+342,Carolyn,West,Female,Spanish,'Junior Executive',-19.88,-43.66972,White,83621.26,Depression,Pain,Bleeding,Cooley,5
+343,Teresa,Bowman,Female,Klingon,'Civil Engineer',14.73333,-88.03333,Native_American,26851.81,Psychosis,Nausea,Bruise,Blackwell,3
+344,Chris,Hernandez,Male,Mandarin,'Analyst Programmer',56.946,24.10589,White,83413.92,Psychosis,Aching,Rash,Blackwell,4
+345,Juan,Ramos,Male,English,'Desktop Support Technician',34.78764,69.05878,Asian,9531.92,Depression,Nausea,Bruise,Urbani,5
+346,Gerald,Anderson,Male,Mandarin,'Clinical Specialist',32.57566,59.7982,White,80904.82,Psychosis,Overheating,Bleeding,Anderson,4
+347,Bruce,Wilson,Male,English,'Programmer II',51.95,81.76667,Latino,265925.38,Depression,Overheating,Bleeding,Carson,4
+348,Gloria,Jones,Female,English,'Assistant Manager',39.1802,-84.4204,Latino,270223.75,Psychosis,Aching,Bleeding,Cooley,3
+349,Thomas,Stewart,Male,Money,'Graphic Designer',26.54404,88.09436,White,156990.03,Anxiety,Pain,Bruise,Urbani,3
+350,David,Richards,Male,English,'Developer IV',-22.54722,-55.73333,Asian,248622.28,Anxiety,Headache,Rash,Rey,4
+351,Stephen,Reynolds,Male,Money,'Programmer Analyst II',35.22194,106.79278,Latino,27768.45,Psychosis,Overheating,Rash,Urbani,5
+352,Janet,Russell,Female,Mandarin,'Professor',-8.1808,111.8413,White,157649.22,Depression,Nausea,Rash,Carson,1
+353,Judy,Myers,Female,Klingon,'Compensation Analyst',30.41467,110.95809,White,208453.96,Psychosis,Aching,Bruise,Anderson,3
+354,Angela,Romero,Female,Mandarin,'Librarian',-11.80722,-75.42439,Ugly,65128.47,Psychosis,Pain,Bleeding,Carson,5
+355,Louise,Bradley,Female,English,'Human Resources Manager',-6.1987,105.9254,White,189721.98,Depression,Headache,Rash,Anderson,2
+356,Melissa,Olson,Female,Klingon,'Structural Engineer',40.71841,122.25624,Native_American,269854.50,Depression,Nausea,Rash,Anderson,3
+357,Debra,Murphy,Female,English,'Food Chemist',-11.91333,-76.53833,Asian,13087.15,Anxiety,Nausea,Bleeding,Drew,2
+358,Diane,Nguyen,Female,English,'Senior Sales Associate',41.38192,121.66632,Latino,265212.09,Psychosis,Overheating,Bleeding,Carson,5
+359,Brian,Harrison,Male,Mandarin,'Accountant III',31.37522,120.45132,Latino,269254.89,Psychosis,Headache,Bleeding,Rey,2
+360,Willie,Rodriguez,Male,English,'Senior Editor',-5.03806,-42.46,White,204572.37,Psychosis,Overheating,Rash,Drew,1
+361,Beverly,Fisher,Female,Money,'Business Systems Development Analyst',59.9355,30.61534,Ugly,261557.47,Anxiety,Pain,Bleeding,Drew,4
+362,Brenda,Ferguson,Female,Klingon,'Dental Hygienist',38.46667,85.63333,Asian,96442.94,Anxiety,Pain,Bruise,Anderson,1
+363,Keith,Williams,Male,Mandarin,'Geological Engineer',-0.35085,117.43523,Black,270788.77,Psychosis,Aching,Bruise,Anderson,5
+364,Amanda,Powell,Female,Klingon,'Engineer II',1.49766,-77.13587,Asian,127873.59,Anxiety,Nausea,Rash,Rey,4
+365,Norma,Vasquez,Female,Klingon,'Quality Engineer',-22.72528,-47.64917,Native_American,118679.01,Depression,Nausea,Bruise,Anderson,3
+366,Benjamin,Kim,Male,French,'Assistant Media Planner',44.01911,18.15477,White,296679.21,Depression,Overheating,Bleeding,Urbani,5
+367,Louis,Jacobs,Male,Klingon,'VP Quality Control',-1.4621,101.023,Black,48023.85,Anxiety,Nausea,Bleeding,Drew,2
+368,Janet,Burke,Female,Japanese,'Nurse Practicioner',29.33778,31.20556,Ugly,278106.51,Depression,Pain,Bleeding,Cooley,3
+369,Sean,Wallace,Male,Money,'Cost Accountant',21.65,110.9,Latino,93727.50,Anxiety,Headache,Bleeding,Urbani,1
+370,Terry,Frazier,Male,French,'Marketing Assistant',-22.73917,-47.33139,Black,42732.60,Psychosis,Pain,Bruise,Anderson,5
+371,Jean,Barnes,Female,Spanish,'VP Product Management',-8.3646,114.1345,Ugly,110916.96,Psychosis,Headache,Bruise,Rey,2
+372,Bonnie,Reyes,Female,Money,'Staff Scientist',35.7303,139.53391,Ugly,50600.86,Psychosis,Pain,Bleeding,Drew,2
+373,Earl,Lewis,Male,French,'Business Systems Development Analyst',35.26,-80.8042,Latino,78652.01,Anxiety,Overheating,Rash,Urbani,5
+374,Shirley,Stevens,Female,Japanese,'Payment Adjustment Coordinator',41.3667,-8.5667,Ugly,79499.19,Depression,Headache,Bruise,Urbani,3
+375,Betty,Greene,Female,Japanese,'Administrative Assistant II',8.00077,-67.39732,Latino,13229.20,Psychosis,Pain,Bleeding,Rey,1
+376,Joan,Collins,Female,Money,'Help Desk Operator',-7.2674,106.6514,White,10215.15,Depression,Aching,Bruise,Urbani,3
+377,Eugene,Perkins,Male,Mandarin,'Staff Scientist',44.77106,19.65512,Latino,241435.16,Depression,Pain,Bleeding,Anderson,5
+378,Aaron,Fuller,Male,Klingon,'Senior Cost Accountant',36.77041,36.81916,White,189407.97,Psychosis,Pain,Rash,Urbani,1
+379,Christopher,Fuller,Male,Japanese,'Editor',59.3666,16.5077,Latino,200525.30,Depression,Headache,Rash,Urbani,1
+380,Stephen,Ellis,Male,Mandarin,'Human Resources Manager',46.96951,30.95914,Latino,212860.54,Psychosis,Overheating,Bleeding,Cooley,3
+381,Donald,Williamson,Male,English,'Engineer III',29.21356,108.21372,White,94756.24,Psychosis,Headache,Bruise,Carson,1
+382,Martin,Wood,Male,French,'Structural Analysis Engineer',-6.9738,113.4418,Latino,150895.48,Psychosis,Pain,Bruise,Blackwell,4
+383,Rose,Morrison,Female,Mandarin,'Accountant I',27.5026,90.50716,White,288880.51,Psychosis,Nausea,Bruise,Drew,5
+384,Jack,Miller,Male,Money,'Teacher',59.3326,18.0649,Latino,261790.97,Psychosis,Headache,Bleeding,Cooley,1
+385,Carol,Wood,Female,Money,'Health Coach IV',32.42521,119.48838,Black,273419.51,Depression,Nausea,Bleeding,Cooley,3
+386,Janice,Bryant,Female,French,'Nuclear Power Engineer',52.94908,22.95653,Latino,135407.84,Depression,Overheating,Rash,Urbani,4
+387,Maria,Simmons,Female,English,'Community Outreach Specialist',9.96261,105.92168,Asian,138504.46,Depression,Overheating,Bleeding,Rey,1
+388,Kathleen,Powell,Female,Spanish,'Design Engineer',-30.15137,27.47691,Asian,259925.53,Anxiety,Aching,Bleeding,Anderson,5
+389,Chris,Duncan,Male,Klingon,'Assistant Professor',23.21722,113.65489,Asian,118964.65,Psychosis,Nausea,Bleeding,Rey,2
+390,Emily,Wright,Female,Japanese,'Sales Representative',6.11278,125.17167,White,278513.72,Anxiety,Pain,Rash,Rey,4
+391,Shirley,Burns,Female,Japanese,'Sales Associate',46.0967,18.2068,Black,115309.98,Depression,Overheating,Rash,Drew,2
+392,Kevin,Mendoza,Male,Klingon,'Chief Design Engineer',29.13436,108.28523,Native_American,13019.26,Anxiety,Overheating,Rash,Urbani,1
+393,Donald,Bailey,Male,French,'Automation Specialist I',18.08988,-77.10759,White,32815.10,Depression,Headache,Rash,Drew,2
+394,Carol,Warren,Female,Money,'Budget/Accounting Analyst I',14.53972,-90.76944,Black,232249.08,Psychosis,Pain,Bleeding,Blackwell,1
+395,Harold,Walker,Male,English,'VP Accounting',52.16835,17.89561,Ugly,233417.08,Depression,Aching,Bleeding,Blackwell,3
+396,Jesse,Burton,Male,Spanish,'Account Representative III',13.62083,-87.6525,White,119369.16,Anxiety,Overheating,Bruise,Drew,4
+397,Denise,Rogers,Female,Spanish,'Dental Hygienist',37.58823,68.65886,White,42104.72,Psychosis,Aching,Bleeding,Cooley,1
+398,Stephen,Harper,Male,French,'Occupational Therapist',50.72919,14.70338,Black,3195.47,Psychosis,Headache,Bleeding,Cooley,3
+399,Irene,Johnson,Female,Mandarin,'Web Developer I',-8.7468,121.9677,White,284964.00,Depression,Overheating,Rash,Anderson,3
+400,Steve,Hill,Male,English,'Marketing Manager',28.84434,81.71011,Black,74645.11,Depression,Headache,Bleeding,Urbani,5
+401,Lillian,Bell,Female,French,'Senior Developer',14.95472,120.89694,Latino,6521.63,Depression,Overheating,Rash,Anderson,5
+402,Richard,Diaz,Male,English,'Financial Analyst',14.7069,121.1306,White,5821.03,Anxiety,Nausea,Bruise,Drew,3
+403,Gary,Moreno,Male,Money,'Marketing Assistant',7.12539,-73.1198,Native_American,178176.87,Depression,Nausea,Bleeding,Anderson,1
+404,Kimberly,Wells,Female,French,'Payment Adjustment Coordinator',12.9344,124.105,Black,722.67,Anxiety,Pain,Rash,Drew,2
+405,Donna,Greene,Female,Klingon,'Chief Design Engineer',41.06306,19.71611,Native_American,35312.95,Depression,Aching,Bleeding,Cooley,2
+406,Eric,Watkins,Male,Mandarin,'Research Nurse',-17.14667,-71.82167,Latino,238481.60,Psychosis,Headache,Rash,Drew,1
+407,Teresa,Stewart,Female,Spanish,'Associate Professor',49.29416,23.56357,Ugly,55626.13,Depression,Aching,Rash,Drew,5
+408,Eugene,Campbell,Male,Japanese,'Administrative Assistant III',54.74444,35.22972,Ugly,204530.39,Depression,Nausea,Bleeding,Drew,4
+409,Debra,Hanson,Female,English,'Environmental Tech',-10.0376,123.9234,White,246613.96,Psychosis,Pain,Rash,Carson,5
+410,Robert,Hunter,Male,English,'Senior Editor',59.3793,13.5036,White,142706.36,Psychosis,Overheating,Rash,Rey,4
+411,Fred,Henderson,Male,English,'Accounting Assistant II',28.7,112,Black,82104.41,Depression,Aching,Rash,Drew,2
+412,Adam,Bishop,Male,English,'Senior Editor',49.85318,13.98126,Asian,119627.90,Anxiety,Overheating,Rash,Urbani,2
+413,Andrea,Riley,Female,French,'Help Desk Operator',35.3703,24.70345,Native_American,170958.47,Anxiety,Pain,Rash,Blackwell,5
+414,Ronald,Ray,Male,Japanese,'Analog Circuit Design manager',48.58388,-68.19214,Asian,18041.80,Anxiety,Overheating,Bleeding,Drew,1
+415,Jane,Rice,Female,English,'Assistant Media Planner',55.38625,56.65287,Asian,389.09,Depression,Aching,Bruise,Drew,5
+416,Gerald,Rice,Male,Klingon,'Senior Quality Engineer',24.18502,114.35992,White,144364.40,Depression,Aching,Rash,Urbani,2
+417,Beverly,Carpenter,Female,English,'Occupational Therapist',51.68526,39.02787,Latino,210019.72,Psychosis,Pain,Bleeding,Rey,1
+418,Kathy,Tucker,Female,English,'Computer Systems Analyst IV',37.96775,23.5721,Ugly,278995.84,Anxiety,Headache,Bruise,Blackwell,4
+419,Ernest,Hart,Male,Money,'Tax Accountant',45.16778,126.95588,Native_American,283305.53,Psychosis,Aching,Rash,Carson,4
+420,Clarence,Cole,Male,Mandarin,'Civil Engineer',52.63744,41.45968,Native_American,161617.89,Anxiety,Nausea,Bruise,Cooley,3
+421,Joyce,Gibson,Female,Japanese,'Web Developer IV',31.86612,118.6031,White,213881.13,Anxiety,Overheating,Bleeding,Urbani,2
+422,Todd,Chapman,Male,Spanish,'Recruiting Manager',-22.75361,-47.41361,Latino,148757.33,Depression,Aching,Bleeding,Rey,2
+423,Randy,Stephens,Male,Money,'Safety Technician III',-23.77368,-64.77002,Ugly,191378.53,Anxiety,Aching,Bruise,Blackwell,5
+424,Joyce,Morgan,Female,Japanese,'Web Developer IV',42.11589,48.19204,Ugly,28152.45,Psychosis,Aching,Bruise,Drew,5
+425,Ruby,Harper,Female,Mandarin,'Senior Cost Accountant',63.30135,22.37821,Native_American,63301.44,Depression,Aching,Bruise,Carson,1
+426,Anthony,Gonzalez,Male,English,'Product Engineer',52.46621,19.61137,Ugly,101145.87,Psychosis,Aching,Rash,Cooley,1
+427,Tammy,Garrett,Female,Japanese,'Software Test Engineer I',-7.3547,108.8043,Ugly,2181.65,Psychosis,Pain,Bleeding,Blackwell,5
+428,Martha,Sanders,Female,Mandarin,'Quality Engineer',54.8,-7.78333,Ugly,4777.48,Anxiety,Overheating,Bleeding,Drew,2
+429,David,Thomas,Male,Money,'Internal Auditor',10.28624,104.64616,White,122778.51,Depression,Aching,Bleeding,Cooley,1
+430,Anna,Flores,Female,English,'Health Coach III',37.9971,-87.575,Asian,260946.93,Anxiety,Headache,Bleeding,Blackwell,5
+431,Timothy,Porter,Male,French,'Computer Systems Analyst II',14.9398,33.234,Black,214723.92,Depression,Aching,Rash,Urbani,2
+432,Carlos,Bowman,Male,French,'Administrative Officer',8.17911,99.85425,Native_American,152491.36,Depression,Headache,Bruise,Drew,5
+433,Marilyn,Richardson,Female,French,'Senior Developer',37.51391,140.40063,Asian,12599.30,Anxiety,Nausea,Rash,Drew,5
+434,Fred,Fernandez,Male,Spanish,'Safety Technician II',-6.795,105.6735,Native_American,282506.05,Anxiety,Nausea,Bruise,Urbani,4
+435,Timothy,Warren,Male,Spanish,'Graphic Designer',5.98944,124.62417,Ugly,159663.49,Depression,Aching,Rash,Blackwell,1
+436,Jane,Alexander,Female,English,'Teacher',15.19334,120.67314,Black,212018.80,Depression,Nausea,Bleeding,Blackwell,3
+437,Jesse,Jackson,Male,French,'Analyst Programmer',36.51667,136.56667,Native_American,213901.66,Psychosis,Overheating,Bleeding,Carson,1
+438,Carolyn,Murphy,Female,Mandarin,'Staff Scientist',13.46059,44.02043,Latino,95316.35,Psychosis,Headache,Rash,Rey,4
+439,Catherine,Greene,Female,English,'Geologist III',46.04444,14.84417,Latino,299716.87,Psychosis,Overheating,Bleeding,Anderson,1
+440,Marie,Clark,Female,Mandarin,'Librarian',37.39807,120.29703,White,60550.63,Anxiety,Nausea,Rash,Carson,4
+441,Wayne,Robertson,Male,Spanish,'Structural Engineer',43.46667,23.93333,Black,299748.87,Anxiety,Nausea,Bleeding,Drew,3
+442,Elizabeth,Morrison,Female,English,'Marketing Assistant',-31.49285,25.00633,Native_American,273079.75,Psychosis,Headache,Rash,Anderson,2
+443,Raymond,Johnston,Male,Spanish,'General Manager',-8.147,113.4298,Native_American,227617.64,Depression,Aching,Rash,Rey,4
+444,Bobby,Harris,Male,Money,'Desktop Support Technician',35.32528,139.89111,Native_American,152664.79,Depression,Pain,Bruise,Anderson,3
+445,Jacqueline,Lewis,Female,Mandarin,'Nurse Practicioner',34.84496,103.45913,White,161764.76,Psychosis,Overheating,Bruise,Carson,5
+446,Evelyn,Reed,Female,Japanese,'Associate Professor',50.56536,21.87404,White,152176.28,Depression,Pain,Bruise,Drew,3
+447,Dennis,Chavez,Male,English,'VP Product Management',31.11926,114.8888,Ugly,215767.15,Depression,Overheating,Bruise,Blackwell,5
+448,Joseph,Brown,Male,French,'Chemical Engineer',32.46415,109.71367,Ugly,180811.30,Depression,Aching,Rash,Cooley,4
+449,Jimmy,Simpson,Male,Money,'Registered Nurse',31.14084,115.67122,Asian,257767.30,Depression,Nausea,Bruise,Blackwell,3
+450,Sarah,Lee,Female,Klingon,'Staff Scientist',33.93624,105.21625,White,21755.49,Psychosis,Headache,Bleeding,Rey,2
+451,Alan,Adams,Male,Mandarin,'Paralegal',65.3172,21.4794,Ugly,241848.40,Anxiety,Overheating,Rash,Rey,1
+452,Johnny,Warren,Male,Mandarin,'Software Test Engineer I',16.616,-97.7885,Asian,29489.40,Psychosis,Overheating,Rash,Blackwell,2
+453,Sandra,Woods,Female,Klingon,'Sales Associate',30.71752,120.17311,Ugly,63486.88,Depression,Headache,Bruise,Carson,2
+454,Margaret,Ross,Female,English,'Internal Auditor',61.87703,21.81945,Native_American,43595.94,Anxiety,Aching,Bruise,Drew,4
+455,Randy,Mccoy,Male,English,'Pharmacist',49.11412,16.19022,Black,35627.45,Depression,Overheating,Rash,Urbani,4
+456,Beverly,Washington,Female,Klingon,'General Manager',-8.6028,121.8186,Asian,130249.53,Psychosis,Aching,Rash,Drew,5
+457,Kevin,Price,Male,Mandarin,'Operator',-6.898,112.0875,Asian,143709.11,Anxiety,Overheating,Bleeding,Anderson,1
+458,Margaret,Stephens,Female,Mandarin,'Editor',48.71939,44.50184,Ugly,177034.09,Anxiety,Headache,Bruise,Cooley,1
+459,Nicole,King,Female,French,'Database Administrator II',14.53333,100.91667,Native_American,190339.94,Psychosis,Pain,Bleeding,Anderson,4
+460,Roy,Sanchez,Male,Mandarin,'Accounting Assistant III',-33.45,-71.66667,White,233601.94,Psychosis,Aching,Rash,Blackwell,2
+461,Maria,Ryan,Female,French,'Physical Therapy Assistant',-13.87111,-70.60667,White,117051.54,Depression,Nausea,Rash,Rey,4
+462,Ralph,Ford,Male,Money,'Clinical Specialist',34.34028,134.04333,Black,201211.01,Depression,Nausea,Bleeding,Drew,2
+463,Pamela,Mills,Female,Money,'Human Resources Manager',33.30987,87.75467,White,41110.07,Psychosis,Aching,Bruise,Rey,4
+464,Clarence,Wilson,Male,Money,'Mechanical Systems Engineer',21.5056,106.34459,Native_American,192129.49,Psychosis,Nausea,Bleeding,Cooley,1
+465,Emily,Lawson,Female,English,'GIS Technical Architect',14.13254,43.38845,White,226560.56,Psychosis,Pain,Bleeding,Urbani,5
+466,Brandon,Jones,Male,Japanese,'Business Systems Development Analyst',36.04043,107.37264,Native_American,125459.48,Psychosis,Nausea,Bruise,Anderson,2
+467,Kimberly,Andrews,Female,Klingon,'Speech Pathologist',45.80529,41.89667,Black,240731.65,Anxiety,Overheating,Rash,Urbani,3
+468,Ann,Weaver,Female,Klingon,'Software Test Engineer IV',-7.2594,108.6108,Native_American,106979.92,Psychosis,Headache,Bruise,Drew,4
+469,Peter,Washington,Male,Japanese,'Research Nurse',27.71633,119.91921,Ugly,7228.03,Anxiety,Pain,Bruise,Carson,5
+470,Samuel,Rice,Male,Mandarin,'Engineer IV',40.2966,-7.8668,Native_American,17169.65,Psychosis,Aching,Bruise,Urbani,4
+471,Martha,Reed,Female,Spanish,'Software Engineer III',15.21006,100.83076,Ugly,276733.11,Psychosis,Overheating,Bruise,Anderson,4
+472,Ryan,Bradley,Male,Money,'Programmer IV',40.09115,122.10409,Latino,203618.39,Depression,Headache,Bleeding,Carson,4
+473,Scott,Richardson,Male,Mandarin,'VP Marketing',17.13333,-62.61667,Asian,287545.84,Anxiety,Pain,Rash,Blackwell,5
+474,Joe,Fernandez,Male,English,'VP Sales',38.8318,-77.2888,Native_American,2889.50,Anxiety,Nausea,Bruise,Cooley,3
+475,Nicole,Gonzales,Female,French,'Structural Engineer',-18.06354,44.02951,Asian,109027.49,Psychosis,Nausea,Bleeding,Urbani,5
+476,Wayne,Hawkins,Male,Japanese,'Health Coach II',43.8333,4.35,White,82760.49,Anxiety,Overheating,Rash,Urbani,1
+477,Anne,Mcdonald,Female,Money,'Software Test Engineer III',48.8412,2.3876,Asian,256994.50,Anxiety,Nausea,Rash,Cooley,3
+478,Judith,Weaver,Female,Mandarin,'Human Resources Assistant IV',40.28659,23.39033,Asian,98251.10,Psychosis,Pain,Rash,Blackwell,3
+479,Willie,Wells,Male,Spanish,'Sales Associate',14.7318,120.2781,Ugly,37394.29,Anxiety,Headache,Bleeding,Carson,4
+480,Willie,Mccoy,Male,English,'Data Coordiator',44.70819,18.48834,Latino,40315.26,Anxiety,Aching,Bruise,Carson,3
+481,Shawn,Ford,Male,Japanese,'Sales Associate',28.25517,115.682,Ugly,261838.90,Anxiety,Aching,Bleeding,Cooley,5
+482,Jennifer,Bowman,Female,Mandarin,'VP Quality Control',29.73627,108.61978,Native_American,117619.03,Depression,Overheating,Bleeding,Cooley,1
+483,Carolyn,Griffin,Female,Money,'Accountant I',34.81836,36.11376,Black,9169.66,Depression,Aching,Bleeding,Urbani,5
+484,Jack,Baker,Male,Klingon,'Health Coach II',47.84393,125.06025,Black,291671.67,Anxiety,Nausea,Bleeding,Carson,4
+485,Karen,Miller,Female,English,'Director of Sales',28.47728,116.95165,Black,257898.31,Depression,Overheating,Rash,Urbani,5
+486,Thomas,Stanley,Male,Klingon,'Web Designer III',55.40833,58.60444,Ugly,268314.46,Anxiety,Aching,Bruise,Rey,3
+487,Anthony,Thompson,Male,Spanish,'Research Assistant II',-36.64074,-57.79174,White,248413.16,Psychosis,Overheating,Rash,Blackwell,1
+488,Terry,Robinson,Male,Klingon,'Project Manager',-6.6748,111.5884,Latino,297259.59,Psychosis,Headache,Rash,Rey,5
+489,Aaron,Watkins,Male,Mandarin,'Biostatistician II',14.85672,104.03981,Latino,285270.52,Depression,Nausea,Bruise,Blackwell,2
+490,Christopher,Phillips,Male,Spanish,'Structural Engineer',5.7089,6.81026,White,157237.73,Psychosis,Pain,Bruise,Drew,2
+491,Gary,Nelson,Male,Japanese,'Nuclear Power Engineer',-8.5432,115.1708,Black,82352.94,Depression,Nausea,Bruise,Drew,3
+492,Mildred,Henry,Female,Spanish,'Sales Representative',48.8655,2.3426,Asian,131471.30,Psychosis,Aching,Rash,Drew,2
+493,Carlos,Ford,Male,Money,'Speech Pathologist',3.1406,101.6955,Latino,244810.77,Psychosis,Headache,Bruise,Carson,5
+494,Carol,Watkins,Female,Spanish,'Human Resources Assistant III',46.64142,124.86283,Black,234392.84,Psychosis,Nausea,Bleeding,Cooley,4
+495,Dorothy,Lane,Female,Money,'Environmental Tech',44.54766,17.37357,Asian,131774.02,Psychosis,Pain,Rash,Rey,5
+496,Matthew,Baker,Male,French,'Software Test Engineer II',37.7848,-122.7278,Ugly,253204.67,Depression,Nausea,Bruise,Cooley,2
+497,James,Ryan,Male,Spanish,'Marketing Manager',34,131.86667,Asian,184952.93,Psychosis,Headache,Bleeding,Urbani,4
+498,Karen,Myers,Female,French,'Tax Accountant',30.75545,20.22626,Latino,157281.10,Anxiety,Pain,Bleeding,Blackwell,1
+499,Sarah,Bowman,Female,Spanish,'Tax Accountant',49.84167,13.22943,Native_American,157078.35,Anxiety,Overheating,Bruise,Rey,1
+500,Theresa,Hayes,Female,Klingon,'Health Coach IV',56.1706,14.8619,Asian,27689.55,Psychosis,Nausea,Bruise,Carson,5
+501,Teresa,Hart,Female,Mandarin,'Safety Technician III',31.60965,114.11806,Native_American,283247.73,Depression,Nausea,Rash,Drew,4
+502,Linda,Vasquez,Female,Klingon,'Analog Circuit Design manager',57.2646,16.4484,Ugly,106796.38,Anxiety,Overheating,Rash,Drew,1
+503,Robert,Mason,Male,Money,'Cost Accountant',-7.58333,-78.08333,White,158129.68,Depression,Pain,Rash,Carson,3
+504,Kathryn,Hanson,Female,Japanese,'Electrical Engineer',54.21305,19.11771,Black,73628.42,Psychosis,Overheating,Bruise,Carson,3
+505,Earl,Lawrence,Male,French,'GIS Technical Architect',30.57383,103.92127,Ugly,10279.36,Anxiety,Nausea,Rash,Urbani,1
+506,Donald,Hughes,Male,Klingon,'Web Developer I',58.9959,16.2072,Asian,223609.14,Psychosis,Pain,Rash,Anderson,1
+507,Ruby,Bryant,Female,Klingon,'Research Nurse',21.93523,110.55813,Black,216123.36,Depression,Overheating,Bruise,Blackwell,2
+508,Emily,Fernandez,Female,Spanish,'Structural Analysis Engineer',-7.3914,108.3095,Native_American,106290.22,Depression,Nausea,Bleeding,Cooley,4
+509,Doris,Brown,Female,Klingon,'Social Worker',41.12348,126.17631,White,236246.86,Depression,Aching,Bruise,Urbani,2
+510,Pamela,Marshall,Female,Mandarin,'Assistant Manager',-22.91944,-42.81861,White,19911.77,Depression,Headache,Rash,Carson,5
+511,Patricia,Ryan,Female,Mandarin,'Operator',-8.1284,112.0853,Ugly,209335.49,Depression,Overheating,Rash,Carson,5
+512,Judy,Johnston,Female,French,'Assistant Manager',13.9318,124.1478,Native_American,181953.74,Psychosis,Pain,Rash,Anderson,2
+513,Virginia,Mitchell,Female,French,'Assistant Professor',10.79408,-74.9164,Ugly,216258.17,Anxiety,Overheating,Bleeding,Drew,2
+514,Deborah,Kim,Female,Money,'Teacher',-54.28111,-36.5092,Black,154541.98,Psychosis,Aching,Bruise,Drew,1
+515,Charles,Carpenter,Male,Money,'Design Engineer',18.43324,110.06692,Ugly,212373.30,Psychosis,Aching,Rash,Anderson,2
+516,Dorothy,Sims,Female,Klingon,'Desktop Support Technician',-6.99306,106.67472,Black,140967.22,Depression,Headache,Rash,Urbani,2
+517,Jeffrey,Garza,Male,Spanish,'Technical Writer',41.49511,22.38359,White,219242.26,Depression,Overheating,Rash,Anderson,4
+518,Charles,Kennedy,Male,French,'Research Nurse',-0.51489,117.01567,Native_American,157173.01,Psychosis,Aching,Rash,Cooley,5
+519,Martha,Cole,Female,French,'Data Coordiator',22.62796,100.72402,Black,181889.63,Psychosis,Pain,Bleeding,Drew,5
+520,Norma,Wallace,Female,Klingon,'Product Engineer',34.93769,-4.31856,Black,224876.01,Depression,Headache,Rash,Urbani,4
+521,Ernest,Taylor,Male,Klingon,'Geological Engineer',30.26125,106.57588,Latino,243037.71,Anxiety,Headache,Rash,Rey,1
+522,Bonnie,Gonzalez,Female,Spanish,'Environmental Tech',10.1214,123.2742,Ugly,179677.66,Psychosis,Pain,Rash,Urbani,1
+523,Kathleen,Bennett,Female,Money,'Librarian',46.67159,-71.78812,Ugly,107076.08,Psychosis,Headache,Bruise,Cooley,1
+524,Justin,Oliver,Male,Money,'VP Quality Control',27.08194,110.79333,Ugly,35447.94,Depression,Headache,Bleeding,Drew,4
+525,Douglas,Castillo,Male,French,'Technical Writer',32.69,-96.9177,Latino,6545.84,Depression,Aching,Bleeding,Blackwell,3
+526,Justin,Berry,Male,Spanish,'Statistician I',-6.9726,112.3667,Black,206213.74,Psychosis,Pain,Rash,Rey,5
+527,Irene,Rodriguez,Female,Money,'Civil Engineer',27.11,109.99556,White,111276.18,Anxiety,Pain,Rash,Blackwell,5
+528,Raymond,Wood,Male,Money,'Senior Quality Engineer',33.7678,-118.1994,Asian,72143.21,Psychosis,Headache,Bleeding,Cooley,3
+529,Barbara,Stone,Female,French,'Assistant Media Planner',-12.96889,-39.26139,Ugly,285641.35,Psychosis,Nausea,Bleeding,Blackwell,2
+530,Teresa,Cole,Female,French,'Help Desk Operator',46.64917,15.84417,Black,65086.49,Anxiety,Headache,Bleeding,Anderson,4
+531,Jack,Reed,Male,Japanese,'Health Coach II',-6.2607,106.0028,Latino,245560.00,Psychosis,Overheating,Bruise,Cooley,2
+532,Marie,Sanders,Female,English,'Technical Writer',-6.8982,113.2463,Asian,247870.63,Depression,Headache,Bleeding,Cooley,5
+533,Kathy,George,Female,Mandarin,'Pharmacist',23.20969,113.26328,White,122011.05,Depression,Aching,Bruise,Carson,5
+534,Nancy,Patterson,Female,Spanish,'Social Worker',18.01248,-76.79928,Black,145714.84,Psychosis,Aching,Bleeding,Urbani,3
+535,Gloria,Pierce,Female,French,'Senior Financial Analyst',42.57843,20.29398,Ugly,88328.01,Psychosis,Aching,Rash,Drew,3
+536,Deborah,Richards,Female,French,'Analyst Programmer',40.6913,-73.8059,Latino,37724.27,Anxiety,Pain,Rash,Rey,3
+537,Antonio,Weaver,Male,Mandarin,'Engineer II',-6.923,112.1543,Black,232831.57,Depression,Pain,Rash,Anderson,2
+538,Brenda,Daniels,Female,Money,'General Manager',35.26,-80.8042,White,51191.47,Depression,Nausea,Rash,Drew,3
+539,Jason,Morrison,Male,Spanish,'VP Sales',52.40574,19.1644,Asian,172260.86,Psychosis,Aching,Rash,Drew,2
+540,Martha,Tucker,Female,Spanish,'Developer III',-29.12106,26.214,Black,137841.40,Depression,Headache,Rash,Drew,1
+541,Frances,Powell,Female,Japanese,'Environmental Tech',48.13348,-78.13283,Latino,38378.57,Psychosis,Aching,Bleeding,Urbani,5
+542,Brenda,Sullivan,Female,Spanish,'VP Marketing',-3.25861,-79.96054,White,257026.28,Depression,Nausea,Rash,Rey,2
+543,Susan,Morgan,Female,Spanish,'Research Associate',-22.85833,-47.22,Asian,118136.92,Psychosis,Headache,Rash,Carson,5
+544,William,Dixon,Male,Mandarin,'VP Product Management',11.54444,-72.90722,Native_American,135521.95,Anxiety,Headache,Bruise,Carson,1
+545,Frances,Nguyen,Female,Japanese,'Junior Executive',44.05,5.05,Native_American,74553.42,Depression,Nausea,Bruise,Cooley,2
+546,Ralph,Anderson,Male,Mandarin,'Safety Technician II',-43.75,172.01667,Black,191302.05,Depression,Headache,Bleeding,Drew,5
+547,Alan,Ortiz,Male,Mandarin,'Payment Adjustment Coordinator',48.23573,23.54914,Latino,190198.05,Anxiety,Overheating,Bruise,Drew,2
+548,Sharon,Cooper,Female,Spanish,'Actuary',55.1384,27.6905,Native_American,239269.47,Depression,Nausea,Bruise,Carson,4
+549,Earl,Morales,Male,Japanese,'Research Associate',29.66007,116.33752,Black,183038.56,Psychosis,Headache,Bleeding,Rey,4
+551,Carlos,Hunt,Male,English,'Teacher',51.08202,28.40057,Native_American,40681.68,Anxiety,Pain,Bleeding,Rey,1
+552,Arthur,Fuller,Male,Mandarin,'Legal Assistant',8.56667,-82.41407,Ugly,28209.10,Psychosis,Aching,Bruise,Blackwell,3
+553,Donna,Davis,Female,Money,'Automation Specialist IV',55.82958,37.61604,White,92260.89,Anxiety,Overheating,Bruise,Blackwell,5
+554,George,Peters,Male,Spanish,'Legal Assistant',-6.7328,111.1991,Asian,80292.39,Anxiety,Nausea,Rash,Blackwell,1
+555,Elizabeth,Brooks,Female,Klingon,'Geologist III',57.6531,14.6968,Asian,53285.74,Depression,Nausea,Bleeding,Blackwell,4
+556,Robert,Rivera,Male,Klingon,'Speech Pathologist',-9.6481,124.5579,Black,134915.08,Psychosis,Nausea,Bruise,Urbani,1
+557,Paul,Greene,Male,French,'Software Engineer III',41.09766,44.67316,Black,71943.65,Psychosis,Headache,Rash,Cooley,5
+558,Carol,Cook,Female,English,'Assistant Media Planner',22.82968,105.49334,Asian,53045.06,Depression,Nausea,Rash,Blackwell,5
+559,Brian,Andrews,Male,English,'Human Resources Assistant III',41.6767,-83.5573,Native_American,29033.47,Psychosis,Pain,Bleeding,Urbani,4
+560,Billy,Morrison,Male,Japanese,'Safety Technician IV',54.08134,21.49551,White,125967.39,Anxiety,Aching,Rash,Drew,3
+561,Carol,Meyer,Female,Japanese,'Structural Analysis Engineer',50.293,2.7819,Native_American,199255.85,Depression,Headache,Rash,Rey,4
+562,Norma,Ryan,Female,Klingon,'Data Coordiator',38.67848,112.24136,White,73493.87,Anxiety,Pain,Rash,Anderson,3
+563,Gary,Gonzalez,Male,Mandarin,'Analog Circuit Design manager',38.8933,-77.0146,Native_American,196661.26,Psychosis,Headache,Bruise,Rey,3
+564,Janet,Hanson,Female,French,'Web Developer III',-17.78629,-63.18117,Black,69926.66,Depression,Nausea,Rash,Cooley,5
+565,Annie,Edwards,Female,Mandarin,'Design Engineer',50.50523,16.07187,Asian,257093.92,Anxiety,Nausea,Rash,Drew,2
+566,Diane,Dixon,Female,Mandarin,'Research Nurse',26.99167,106.34167,Ugly,209374.55,Depression,Headache,Bruise,Rey,3
+567,Nancy,Bryant,Female,Japanese,'Human Resources Assistant IV',29.7454,117.54103,Asian,289705.13,Anxiety,Pain,Bleeding,Carson,2
+568,Kelly,Rice,Female,English,'Environmental Tech',-9.62732,-74.97658,White,149975.79,Depression,Headache,Rash,Blackwell,5
+569,Kelly,Schmidt,Female,Klingon,'Programmer Analyst I',46.65222,33.35904,Black,271334.50,Depression,Aching,Rash,Cooley,3
+570,David,Clark,Male,English,'Safety Technician II',23.5449,113.59651,White,140099.27,Anxiety,Nausea,Bruise,Carson,3
+571,Martin,Hawkins,Male,English,'Clinical Specialist',10.14722,124.15389,Native_American,116371.26,Psychosis,Nausea,Rash,Urbani,4
+572,Virginia,Cook,Female,Spanish,'VP Product Management',-6.74826,106.02616,Black,193610.01,Anxiety,Headache,Bruise,Blackwell,5
+573,Sharon,Hall,Female,French,'Executive Secretary',-8.4691,122.707,Ugly,61358.23,Anxiety,Pain,Bleeding,Urbani,1
+574,Timothy,Clark,Male,Mandarin,'Assistant Manager',32.34289,36.20804,Latino,279912.77,Psychosis,Headache,Bleeding,Rey,2
+575,Donna,Weaver,Female,English,'Paralegal',43.49806,43.61889,Ugly,122994.92,Anxiety,Overheating,Bleeding,Drew,3
+576,Bonnie,Peters,Female,Mandarin,'Senior Financial Analyst',-8.1805,114.357,White,61602.27,Depression,Pain,Bleeding,Blackwell,2
+577,Doris,Mcdonald,Female,English,'Chemical Engineer',-39.64355,-72.33269,Ugly,89166.31,Depression,Nausea,Bruise,Cooley,2
+578,Roy,Medina,Male,Klingon,'Dental Hygienist',39.2833,-9.3167,Ugly,294670.23,Depression,Overheating,Rash,Rey,5
+579,Beverly,Taylor,Female,Japanese,'Assistant Professor',42.48333,26.5,Black,209411.46,Psychosis,Overheating,Bleeding,Cooley,2
+580,Heather,Hernandez,Female,Spanish,'Registered Nurse',26.82961,116.40902,Native_American,198890.11,Anxiety,Aching,Rash,Urbani,3
+581,Janet,Peterson,Female,French,'Recruiting Manager',-19.52905,45.45559,White,207953.72,Psychosis,Nausea,Bruise,Rey,4
+582,Henry,Dean,Male,Japanese,'Quality Engineer',-6.31671,105.88137,Ugly,79169.62,Anxiety,Pain,Bleeding,Blackwell,2
+583,Carl,Hart,Male,Japanese,'GIS Technical Architect',49.8464,29.06062,Black,248055.37,Depression,Overheating,Rash,Carson,2
+584,Annie,Perkins,Female,Money,'Developer IV',39.2417,-7.5292,Latino,273328.47,Psychosis,Aching,Rash,Carson,2
+585,Jennifer,Cook,Female,French,'Budget/Accounting Analyst IV',8.25,-76.05,Ugly,216158.86,Anxiety,Overheating,Bruise,Cooley,5
+586,Janice,Campbell,Female,English,'Account Representative II',40.0254,64.82885,Asian,83591.86,Anxiety,Nausea,Bruise,Cooley,4
+587,Steve,Carpenter,Male,Japanese,'Safety Technician IV',24.6997,70.177,Latino,85993.30,Psychosis,Overheating,Bleeding,Drew,3
+588,Ann,Harris,Female,Klingon,'Graphic Designer',-36.6,-61.75,Native_American,261276.30,Depression,Aching,Bleeding,Blackwell,1
+589,Justin,Richardson,Male,Spanish,'Pharmacist',32.14091,109.81595,Latino,205518.11,Depression,Overheating,Bleeding,Rey,3
+590,Adam,Freeman,Male,Spanish,'Computer Systems Analyst III',7.64222,125.62917,Native_American,8140.69,Anxiety,Aching,Rash,Carson,5
+591,Evelyn,Nguyen,Female,Mandarin,'Account Executive',37.97061,22.78018,White,170913.57,Anxiety,Overheating,Bruise,Carson,5
+592,Gloria,Perry,Female,Money,'Structural Analysis Engineer',52.45014,-109.16816,White,45858.60,Psychosis,Aching,Bleeding,Rey,4
+593,Martin,Dixon,Male,Klingon,'Structural Analysis Engineer',40.2567,-8.3167,Black,185619.62,Depression,Pain,Rash,Blackwell,4
+594,Randy,Mitchell,Male,Spanish,'Human Resources Manager',48.31667,23.03846,Latino,290776.83,Anxiety,Nausea,Rash,Rey,3
+595,Frank,Mendoza,Male,Spanish,'Assistant Professor',45.14972,18.94917,White,281144.62,Depression,Pain,Rash,Carson,1
+596,Bruce,Carr,Male,Klingon,'Professor',38.67028,125.77611,White,185599.04,Psychosis,Aching,Bleeding,Drew,1
+597,Randy,Gordon,Male,Japanese,'Speech Pathologist',-7.3825,108.16,Black,87136.91,Psychosis,Pain,Rash,Cooley,4
+598,Joseph,Gibson,Male,Money,'Accounting Assistant II',26.96589,111.24138,Asian,210627.09,Depression,Headache,Bruise,Blackwell,2
+599,Harold,Martinez,Male,Japanese,'Budget/Accounting Analyst II',-8.0928,111.989,Ugly,293732.53,Psychosis,Overheating,Bruise,Carson,4
+600,Dorothy,Daniels,Female,French,'Accountant II',46.79611,126.99972,Asian,169337.75,Anxiety,Overheating,Rash,Drew,4
+601,Lillian,Rivera,Female,Money,'Mechanical Systems Engineer',48.82488,29.96806,Black,151203.90,Psychosis,Overheating,Bruise,Cooley,5
+602,Daniel,Andrews,Male,Klingon,'Payment Adjustment Coordinator',48.72094,33.07078,Asian,10304.10,Anxiety,Nausea,Rash,Urbani,3
+603,Dennis,Roberts,Male,Money,'Chief Design Engineer',19.83611,109.92625,Black,254016.93,Psychosis,Headache,Rash,Rey,4
+604,Eugene,Butler,Male,French,'Human Resources Assistant IV',40.2674,-8.4,White,117877.87,Depression,Overheating,Bruise,Drew,1
+605,Deborah,Lawson,Female,Klingon,'Professor',50.51032,15.49444,White,47240.79,Psychosis,Nausea,Bleeding,Urbani,3
+606,Nancy,Kelly,Female,English,'Clinical Specialist',46.6667,5.55,Ugly,165088.76,Anxiety,Aching,Rash,Cooley,1
+607,Steve,Harvey,Male,Spanish,'Engineer III',-18.63333,47.7,Asian,159132.32,Anxiety,Nausea,Bleeding,Cooley,2
+608,Lori,Holmes,Female,Mandarin,'Software Engineer II',9.7534,122.4739,Latino,216167.02,Psychosis,Aching,Bleeding,Carson,3
+609,Jesse,Murray,Male,Japanese,'Senior Quality Engineer',27.30231,115.14208,Latino,280551.25,Psychosis,Pain,Bruise,Carson,4
+610,Walter,Woods,Male,Klingon,'Human Resources Manager',3.57622,125.51849,Latino,143194.89,Psychosis,Nausea,Bruise,Carson,2
+611,Juan,Torres,Male,French,'Research Associate',59.9533,10.6791,White,192216.98,Depression,Overheating,Bruise,Anderson,5
+612,Tina,Robertson,Female,English,'Safety Technician III',38.0025,140.19111,Black,187894.81,Anxiety,Pain,Rash,Urbani,2
+613,Teresa,Scott,Female,Money,'Structural Engineer',42.03083,21.44667,Native_American,86538.51,Psychosis,Nausea,Bleeding,Carson,1
+614,Bobby,Walker,Male,Japanese,'Health Coach I',18.4576,-96.3236,Native_American,105584.53,Depression,Overheating,Rash,Carson,3
+615,Diana,Holmes,Female,Klingon,'Social Worker',61.8425,-6.80778,White,278800.08,Depression,Pain,Rash,Urbani,1
+616,Bruce,Gray,Male,French,'Geologist III',22.19083,-75.72583,Asian,250437.55,Psychosis,Aching,Bruise,Cooley,5
+617,Lois,Sanders,Female,Spanish,'Librarian',-2.96667,-47.48333,Black,140421.22,Psychosis,Overheating,Rash,Drew,5
+618,Laura,Gardner,Female,Klingon,'Research Nurse',7.00078,-72.10852,White,86587.31,Depression,Pain,Bruise,Urbani,2
+619,Benjamin,Wells,Male,Japanese,'Civil Engineer',-38.82803,-62.69355,Ugly,131682.83,Psychosis,Headache,Bleeding,Anderson,3
+620,Wayne,Kim,Male,Money,'Environmental Specialist',-14.0725,-72.47278,White,266970.27,Anxiety,Overheating,Rash,Drew,4
+621,Jeffrey,Cole,Male,English,'Budget/Accounting Analyst III',25.3604,60.3995,Asian,184346.20,Anxiety,Pain,Bleeding,Carson,4
+622,Lori,Howard,Female,Mandarin,'Sales Associate',16.72229,104.74136,Black,142930.86,Psychosis,Pain,Bruise,Carson,4
+623,Rachel,Parker,Female,Money,'Project Manager',30.14111,-8.37221,Native_American,252339.06,Anxiety,Pain,Bruise,Rey,1
+624,Amanda,Elliott,Female,English,'Graphic Designer',49.9062,22.51554,Black,149776.16,Anxiety,Aching,Rash,Anderson,3
+625,Rose,Simpson,Female,Money,'Programmer Analyst II',41.2444,-7.7278,White,4899.13,Psychosis,Nausea,Bruise,Drew,1
+626,Lisa,Hunt,Female,Spanish,'Senior Sales Associate',-26.93041,-59.51861,Latino,100706.44,Depression,Overheating,Bruise,Carson,2
+627,Sara,Hernandez,Female,Mandarin,'Software Consultant',16.8528,120.3761,Ugly,86676.23,Psychosis,Aching,Bleeding,Rey,4
+628,Virginia,Snyder,Female,French,'Chief Design Engineer',52.38988,20.19081,Native_American,217892.66,Anxiety,Nausea,Rash,Cooley,1
+629,Dennis,Henry,Male,Money,'Chief Design Engineer',36.99532,59.76472,Native_American,181857.84,Psychosis,Overheating,Rash,Anderson,4
+630,Clarence,Burke,Male,English,'Accountant I',-12.57626,13.40547,Asian,50706.94,Psychosis,Overheating,Bleeding,Blackwell,5
+631,Karen,Sanchez,Female,Spanish,'Assistant Professor',51.5105,84.4813,Ugly,127607.15,Depression,Nausea,Bleeding,Blackwell,1
+632,Scott,Mitchell,Male,English,'Financial Advisor',6.20602,-1.66191,Asian,71919.73,Anxiety,Nausea,Rash,Rey,1
+633,Kathleen,Reed,Female,Spanish,'Office Assistant II',15.9854,120.1832,Native_American,183869.30,Psychosis,Pain,Bruise,Blackwell,4
+634,Ruby,Howell,Female,Money,'VP Quality Control',-6.953,113.8717,Asian,195352.88,Psychosis,Overheating,Bruise,Carson,1
+635,Dorothy,Rivera,Female,Klingon,'Programmer Analyst IV',48.8147,2.3607,Asian,194097.38,Depression,Aching,Bleeding,Cooley,2
+636,Margaret,Phillips,Female,French,'Accountant I',34.15278,108.20639,Native_American,220245.90,Depression,Nausea,Rash,Carson,2
+637,Kenneth,Bowman,Male,Money,'Food Chemist',23.08521,116.36664,White,174044.43,Anxiety,Headache,Rash,Cooley,2
+638,Joseph,Fowler,Male,Japanese,'Product Engineer',28.26689,83.96851,Ugly,204428.89,Psychosis,Headache,Rash,Blackwell,5
+639,Elizabeth,Fox,Female,Klingon,'Automation Specialist IV',-7.58583,-35.10583,Black,268772.66,Depression,Pain,Rash,Blackwell,3
+640,Robert,Meyer,Male,Mandarin,'Senior Sales Associate',10.4516,122.8325,White,195351.16,Depression,Pain,Bleeding,Blackwell,4
+641,Amy,Kelly,Female,French,'Analog Circuit Design manager',8.16667,124.21667,Ugly,44847.58,Psychosis,Aching,Bruise,Cooley,2
+642,Alan,Hill,Male,Money,'Chemical Engineer',35.35,136.78333,Latino,35640.94,Psychosis,Nausea,Bleeding,Carson,2
+643,Joe,Moreno,Male,Klingon,'Assistant Professor',-37.814,144.9633,Ugly,170783.63,Depression,Headache,Bleeding,Drew,1
+644,Chris,Montgomery,Male,Klingon,'Dental Hygienist',49.72969,20.13554,White,248948.61,Psychosis,Overheating,Bleeding,Rey,5
+645,Aaron,Thompson,Male,Money,'Community Outreach Specialist',-7.0128,108.3572,Ugly,220228.65,Psychosis,Pain,Bleeding,Anderson,3
+646,Lawrence,Bryant,Male,Money,'Accountant IV',35.22194,106.79278,Black,64502.89,Depression,Overheating,Rash,Urbani,4
+647,Juan,Gutierrez,Male,Spanish,'Technical Writer',-7.4772,107.6176,Black,36874.74,Depression,Aching,Rash,Anderson,1
+648,Wayne,Henderson,Male,Mandarin,'Senior Financial Analyst',-25.46642,-65.5663,Ugly,135117.28,Anxiety,Pain,Bleeding,Cooley,5
+649,Emily,Flores,Female,Japanese,'Environmental Tech',-20.66028,-43.78611,Black,106487.73,Depression,Overheating,Bleeding,Carson,1
+650,Douglas,Patterson,Male,English,'Electrical Engineer',33.12342,131.80401,Latino,283422.85,Depression,Pain,Bruise,Cooley,1
+651,Patrick,Tucker,Male,Money,'Software Consultant',38.55036,114.80646,Ugly,143698.97,Anxiety,Headache,Bleeding,Urbani,3
+652,Edward,Sullivan,Male,Money,'Engineer I',22.04389,111.75114,Native_American,67697.32,Psychosis,Nausea,Bleeding,Carson,3
+653,Joan,Little,Female,Japanese,'Analyst Programmer',4.934,-1.7137,Ugly,187237.70,Depression,Nausea,Bruise,Rey,5
+654,Kevin,Gibson,Male,Japanese,'Senior Cost Accountant',-2.5094,112.1515,Latino,183876.36,Psychosis,Pain,Rash,Anderson,4
+655,Marilyn,Evans,Female,Mandarin,'Human Resources Assistant II',49.5,105.61667,Latino,246546.92,Psychosis,Aching,Rash,Carson,1
+656,Diana,Williams,Female,English,'Editor',46.30028,28.65722,White,227275.66,Anxiety,Pain,Rash,Anderson,1
+657,Joe,Woods,Male,French,'Project Manager',19.0942,-96.3334,Native_American,172268.97,Psychosis,Overheating,Bruise,Carson,2
+658,Willie,Bennett,Male,Spanish,'Product Engineer',14.97418,120.15733,Asian,205729.67,Depression,Headache,Rash,Urbani,4
+659,Keith,Ruiz,Male,Japanese,'Internal Auditor',-9.5411,119.0029,Asian,114350.84,Psychosis,Headache,Rash,Urbani,3
+660,Kimberly,Fowler,Female,Japanese,'Compensation Analyst',33.84667,44.23444,Latino,41790.82,Depression,Overheating,Bleeding,Drew,1
+661,Randy,Clark,Male,Spanish,'Computer Systems Analyst III',-1.28333,36.81667,Asian,32322.77,Anxiety,Aching,Rash,Anderson,1
+662,Joshua,Myers,Male,Japanese,'Software Consultant',47.1126,-122.7794,White,285535.17,Anxiety,Pain,Bleeding,Blackwell,1
+663,Wayne,Jones,Male,Japanese,'Engineer II',41.87079,72.9402,Asian,44308.14,Psychosis,Overheating,Bleeding,Blackwell,5
+664,Henry,Turner,Male,French,'Associate Professor',13.2349,123.7778,Latino,165450.66,Psychosis,Overheating,Bruise,Cooley,1
+665,Chris,Long,Male,Mandarin,'Speech Pathologist',33.86055,113.11598,Latino,212678.30,Depression,Aching,Rash,Blackwell,2
+666,Gregory,Arnold,Male,Klingon,'Help Desk Technician',-8.001,113.7848,Native_American,299140.87,Psychosis,Pain,Bleeding,Cooley,1
+667,Randy,Lewis,Male,Money,'Senior Cost Accountant',2.39341,-75.89232,Black,7527.10,Anxiety,Overheating,Bruise,Rey,4
+668,Randy,Gray,Male,Mandarin,'Environmental Specialist',56.5197,64.632,Latino,190002.19,Depression,Overheating,Rash,Urbani,2
+669,Ralph,Chapman,Male,French,'Accountant I',30.24712,108.48336,Ugly,226379.07,Anxiety,Pain,Rash,Rey,2
+670,Phillip,Ray,Male,Japanese,'Developer I',34.79936,135.35697,Black,60624.36,Psychosis,Aching,Bruise,Cooley,3
+671,Helen,Carr,Female,Japanese,'Programmer Analyst II',10.2074,122.9627,Native_American,59074.84,Psychosis,Overheating,Rash,Anderson,4
+672,Raymond,Ramirez,Male,Money,'Chemical Engineer',40.77838,122.08451,Native_American,140111.82,Depression,Aching,Bleeding,Rey,4
+673,Paul,Davis,Male,Mandarin,'Database Administrator II',-6.7722,111.2661,Black,74176.96,Depression,Pain,Bruise,Anderson,4
+674,Mary,Schmidt,Female,Mandarin,'Social Worker',-6.7769,111.2573,Asian,188699.32,Depression,Pain,Bleeding,Cooley,1
+675,Bruce,Jordan,Male,Spanish,'Quality Control Specialist',29.56902,115.9761,Black,139579.85,Anxiety,Aching,Bleeding,Blackwell,4
+676,Ruth,Palmer,Female,Klingon,'Marketing Assistant',49.71277,19.31045,Ugly,276088.30,Depression,Pain,Bleeding,Blackwell,3
+677,Wayne,Chavez,Male,English,'Budget/Accounting Analyst II',30.45046,119.80652,Ugly,99376.43,Psychosis,Aching,Bleeding,Urbani,1
+678,Kimberly,Ferguson,Female,French,'Budget/Accounting Analyst I',31.81,-9.33,Ugly,227057.07,Psychosis,Nausea,Rash,Carson,2
+679,Justin,Mills,Male,Spanish,'Analyst Programmer',48.54653,25.74533,Latino,190679.55,Depression,Headache,Rash,Blackwell,4
+680,Bruce,Montgomery,Male,English,'Biostatistician I',61.3037,17.0592,Black,171980.54,Psychosis,Headache,Bruise,Carson,5
+681,Robin,Boyd,Female,Money,'Cost Accountant',13.7283,123.5939,White,230884.54,Anxiety,Overheating,Rash,Blackwell,4
+682,Victor,Jackson,Male,French,'Chief Design Engineer',66.3275,22.8441,Native_American,24569.82,Anxiety,Pain,Bruise,Carson,1
+683,Diana,Perez,Female,Spanish,'Project Manager',-8.5346,115.4022,Native_American,57048.00,Anxiety,Aching,Bruise,Drew,4
+684,Scott,Young,Male,English,'Office Assistant I',38.6667,-9.0667,Latino,256423.15,Depression,Aching,Rash,Anderson,2
+685,Stephen,Hawkins,Male,Klingon,'Senior Quality Engineer',21.2435,-87.8548,Native_American,35830.65,Anxiety,Pain,Bleeding,Rey,4
+686,Patricia,Gilbert,Female,Japanese,'Associate Professor',16.2633,120.4463,Asian,125497.80,Depression,Nausea,Bleeding,Carson,4
+687,Louise,Sims,Female,English,'Senior Quality Engineer',39.5887,-8.6527,Asian,112009.61,Psychosis,Headache,Bruise,Carson,5
+688,Jane,Stewart,Female,Money,'Analog Circuit Design manager',11.31823,-12.28332,Native_American,248676.47,Anxiety,Overheating,Bruise,Carson,3
+689,Gregory,Woods,Male,Mandarin,'Health Coach III',39.36667,22.94583,Asian,282437.51,Anxiety,Aching,Bruise,Cooley,2
+690,Beverly,Morris,Female,Spanish,'Statistician II',-1.28538,29.68497,Ugly,176847.28,Depression,Nausea,Bruise,Rey,3
+691,Louise,Evans,Female,Spanish,'Operator',52.4827,13.2905,White,184058.78,Depression,Overheating,Bruise,Cooley,4
+692,Debra,Ray,Female,Japanese,'Web Developer I',34.075,119.45,Native_American,227995.80,Psychosis,Pain,Rash,Cooley,5
+693,Gerald,Bowman,Male,Mandarin,'Accounting Assistant III',32.43502,13.6332,Ugly,227789.74,Psychosis,Pain,Bruise,Urbani,4
+694,Carolyn,Simmons,Female,English,'Staff Scientist',-8.0839,113.7592,Native_American,26912.00,Depression,Overheating,Bruise,Urbani,1
+695,Martha,Hudson,Female,Japanese,'Help Desk Technician',39.7434,-75.5827,White,258334.51,Anxiety,Nausea,Bruise,Carson,4
+696,Charles,Henry,Male,Mandarin,'Developer I',-7.228,107.901,White,283519.13,Psychosis,Pain,Rash,Drew,5
+697,Anna,Garrett,Female,English,'Nuclear Power Engineer',51.97428,18.79308,Latino,299106.58,Anxiety,Headache,Bleeding,Carson,5
+698,Richard,Frazier,Male,Spanish,'Sales Associate',10.63956,122.6382,Ugly,95087.33,Depression,Overheating,Bruise,Urbani,5
+699,Carol,Ferguson,Female,Japanese,'Technical Writer',-24.65451,25.90859,Asian,230433.40,Psychosis,Nausea,Bruise,Urbani,4
+700,Julie,Edwards,Female,Klingon,'Senior Sales Associate',55.80672,38.96178,Native_American,27774.93,Depression,Nausea,Rash,Urbani,1
+701,Billy,Willis,Male,Klingon,'Junior Executive',-3.0526,102.8149,Asian,91766.05,Depression,Pain,Rash,Rey,4
+702,Rose,Schmidt,Female,Japanese,'Account Coordinator',17.32197,52.09566,Asian,98722.14,Depression,Overheating,Bleeding,Anderson,5
+703,Elizabeth,Griffin,Female,Mandarin,'Mechanical Systems Engineer',-6.5055,106.4959,Latino,56672.75,Psychosis,Overheating,Bleeding,Carson,2
+704,Joshua,Medina,Male,Klingon,'VP Product Management',51.79987,124.5179,Native_American,77320.77,Anxiety,Pain,Rash,Rey,4
+705,Joshua,Boyd,Male,Klingon,'Paralegal',43.87444,81.62056,Native_American,190692.87,Depression,Nausea,Bruise,Urbani,2
+706,Chris,Lopez,Male,Klingon,'Research Assistant IV',-28.31971,27.62082,Ugly,197703.24,Depression,Pain,Bleeding,Cooley,5
+707,Carolyn,Edwards,Female,French,'Business Systems Development Analyst',41.17799,20.67784,White,57666.96,Depression,Overheating,Rash,Urbani,2
+708,Mildred,Gilbert,Female,Japanese,'Web Developer II',-8.0069,111.4619,Black,177130.19,Depression,Aching,Bruise,Drew,1
+709,Peter,Mcdonald,Male,Klingon,'Cost Accountant',13.65,123.48333,Ugly,236472.36,Anxiety,Nausea,Bruise,Carson,5
+710,James,Jacobs,Male,English,'Recruiting Manager',47.58785,126.6797,White,75368.99,Depression,Headache,Bruise,Cooley,5
+711,Justin,Holmes,Male,Klingon,'Community Outreach Specialist',40.29414,70.43122,Ugly,169432.75,Depression,Nausea,Bruise,Rey,5
+712,Edward,Carr,Male,Spanish,'Mechanical Systems Engineer',53.83333,30.38333,White,2303.33,Anxiety,Aching,Rash,Cooley,5
+713,Ashley,Wells,Female,French,'Account Representative III',9.52212,45.53363,Black,5957.43,Psychosis,Nausea,Bleeding,Urbani,2
+714,David,Brown,Male,English,'Pharmacist',48.8235,2.2903,Latino,93903.75,Anxiety,Nausea,Bruise,Carson,2
+715,Amanda,Harvey,Female,Spanish,'Desktop Support Technician',32.61957,106.10118,Native_American,95906.13,Depression,Nausea,Bleeding,Rey,1
+716,Jeremy,Peters,Male,Klingon,'Research Assistant IV',-9.89412,-76.41455,White,3668.51,Psychosis,Pain,Rash,Rey,2
+717,Roger,Walker,Male,Mandarin,'Computer Systems Analyst III',15.64451,120.64196,Latino,117423.97,Anxiety,Overheating,Rash,Blackwell,5
+718,Wayne,Thomas,Male,Money,'Speech Pathologist',-6.4968,105.8157,Asian,240339.48,Anxiety,Headache,Bruise,Drew,3
+719,Paula,Daniels,Female,Japanese,'VP Product Management',7.01667,124.7,White,279206.08,Anxiety,Nausea,Bleeding,Anderson,5
+720,Sarah,Fox,Female,Spanish,'Librarian',37.11664,70.58002,Latino,97007.84,Depression,Pain,Rash,Cooley,1
+721,Jean,Ross,Female,Japanese,'Statistician I',35.8563,139.90266,Asian,136128.98,Depression,Overheating,Bruise,Anderson,3
+722,Jack,Carroll,Male,French,'Structural Engineer',59.6139,16.2285,White,266534.58,Depression,Aching,Bleeding,Cooley,4
+723,Virginia,Rivera,Female,Spanish,'Internal Auditor',-7.3878,108.8695,White,122167.69,Depression,Nausea,Rash,Urbani,3
+724,Anna,Murphy,Female,Spanish,'Developer II',34.58515,109.20857,Ugly,41074.85,Anxiety,Aching,Bruise,Rey,4
+725,Edward,Tucker,Male,Mandarin,'Senior Editor',21.4183,-97.6509,Latino,237992.34,Anxiety,Pain,Bleeding,Carson,2
+726,Roger,Jackson,Male,French,'Quality Control Specialist',-2.911,-79.81441,Asian,52325.17,Anxiety,Headache,Bleeding,Cooley,2
+727,Helen,Myers,Female,French,'Nuclear Power Engineer',40.8457,120.93602,Black,69121.20,Psychosis,Overheating,Bruise,Urbani,3
+728,Terry,Morales,Male,Klingon,'Software Test Engineer III',36.56374,105.64181,Native_American,99757.80,Depression,Aching,Rash,Drew,1
+729,Willie,Henderson,Male,English,'Professor',53.33306,-6.24889,Black,108939.96,Depression,Nausea,Bleeding,Rey,5
+730,Virginia,Olson,Female,Japanese,'Staff Scientist',59.3059,17.9872,Latino,51145.45,Depression,Overheating,Bruise,Carson,3
+731,Jane,Lopez,Female,French,'Administrative Officer',60.5833,16.5333,Black,189132.95,Anxiety,Aching,Bruise,Urbani,1
+732,Ronald,Gutierrez,Male,Japanese,'Cost Accountant',59.2675,10.4076,Native_American,207321.61,Anxiety,Nausea,Bruise,Carson,1
+733,Julie,Daniels,Female,Japanese,'Product Engineer',40.84084,22.92163,Latino,85536.88,Psychosis,Nausea,Bruise,Cooley,3
+734,Amy,Rodriguez,Female,French,'Senior Financial Analyst',30.00808,31.21093,Asian,189283.38,Depression,Overheating,Bleeding,Blackwell,2
+735,Jack,Peterson,Male,Money,'Safety Technician III',18.34282,105.9057,Asian,69090.91,Depression,Nausea,Bruise,Cooley,5
+736,Scott,Warren,Male,Klingon,'Nurse Practicioner',61.26421,24.03122,Latino,128215.15,Depression,Overheating,Rash,Anderson,3
+737,Maria,Brooks,Female,Mandarin,'Registered Nurse',27.7739,116.91454,Black,167764.59,Depression,Overheating,Bruise,Anderson,1
+738,Rose,Sims,Female,Spanish,'Human Resources Manager',47.3667,8.55,Native_American,133581.83,Anxiety,Pain,Rash,Cooley,5
+739,Sara,Edwards,Female,English,'VP Marketing',-14.50333,-42.22222,Latino,183535.79,Anxiety,Overheating,Bruise,Anderson,4
+740,Joan,Hamilton,Female,Spanish,'Cost Accountant',-10.13818,-76.62288,Latino,182073.98,Psychosis,Nausea,Bruise,Rey,2
+741,Martin,Banks,Male,Spanish,'Structural Analysis Engineer',-25.3,-56.9,Asian,90504.19,Anxiety,Aching,Bleeding,Cooley,4
+742,Catherine,Andrews,Female,French,'Accounting Assistant I',-30.42036,-64.34984,White,251076.60,Depression,Pain,Bleeding,Anderson,2
+743,Judith,Hicks,Female,Klingon,'Programmer Analyst I',-39.06667,-67.3,Asian,70251.12,Anxiety,Aching,Bruise,Cooley,3
+744,Jesse,Elliott,Male,Mandarin,'VP Quality Control',45.27954,19.56838,Black,130213.93,Anxiety,Overheating,Rash,Urbani,2
+745,Willie,Brooks,Male,Money,'Web Designer II',55.85,37.63333,White,269977.28,Psychosis,Pain,Rash,Anderson,2
+746,Barbara,Ferguson,Female,French,'VP Marketing',32.4908,-92.1594,Latino,210186.97,Anxiety,Overheating,Bruise,Carson,4
+747,Frances,Ross,Female,Money,'Database Administrator II',10.18,-67.51184,Asian,204682.16,Psychosis,Aching,Bleeding,Blackwell,1
+748,Judy,Hanson,Female,Spanish,'Assistant Media Planner',40.82444,140.74,Asian,208053.64,Anxiety,Aching,Bleeding,Rey,4
+749,Lillian,Kelley,Female,Spanish,'Quality Control Specialist',-7.0028,108.329,Black,114554.05,Anxiety,Nausea,Rash,Blackwell,2
+750,Christopher,Fernandez,Male,Money,'Geological Engineer',41.3087,-72.9271,White,54547.88,Anxiety,Headache,Rash,Drew,1
+751,Doris,Phillips,Female,Klingon,'Senior Financial Analyst',49.96008,14.31979,Native_American,220093.44,Anxiety,Nausea,Bleeding,Urbani,1
+752,Gary,Thompson,Male,Mandarin,'Assistant Professor',-7.8073,108.2926,Asian,254644.72,Depression,Pain,Rash,Carson,1
+753,Mildred,Cunningham,Female,Mandarin,'Help Desk Operator',59.3987,18.0294,Native_American,85627.41,Psychosis,Pain,Bruise,Cooley,2
+754,Donald,Richardson,Male,English,'Analyst Programmer',44.2,0.6333,White,75389.15,Psychosis,Overheating,Bleeding,Rey,2
+755,Lisa,Carr,Female,French,'Tax Accountant',41.2667,-8.6333,Black,259945.82,Depression,Headache,Rash,Anderson,2
+756,Frank,Snyder,Male,English,'VP Quality Control',-22.74639,-50.38694,White,194164.30,Depression,Overheating,Bruise,Blackwell,3
+757,Eric,Wilson,Male,Klingon,'Human Resources Manager',-32.61072,-63.58038,Ugly,68505.83,Psychosis,Aching,Bleeding,Cooley,4
+758,Samuel,Taylor,Male,English,'Senior Quality Engineer',42.03761,43.82382,Latino,96610.81,Psychosis,Headache,Bleeding,Rey,1
+759,Louis,Cooper,Male,Money,'Desktop Support Technician',50.2875,14.09214,White,217516.36,Depression,Overheating,Rash,Carson,2
+760,Kelly,Oliver,Female,French,'Developer IV',9.6531,124.3697,Black,22919.48,Depression,Overheating,Bleeding,Rey,1
+761,Debra,Austin,Female,Mandarin,'Pharmacist',-8.7872,121.3923,Black,202875.73,Anxiety,Headache,Rash,Rey,4
+762,Brenda,Ross,Female,French,'Project Manager',-3.55,33.4,Latino,219129.83,Depression,Aching,Bleeding,Carson,2
+763,Howard,Jackson,Male,Japanese,'Office Assistant IV',46.33336,-72.43241,Native_American,291339.20,Depression,Aching,Rash,Anderson,4
+764,Evelyn,Medina,Female,Klingon,'Help Desk Technician',40.1262,-8.2643,Ugly,159408.97,Depression,Headache,Bruise,Drew,5
+765,Jennifer,Black,Female,Mandarin,'Account Representative I',25.80551,118.13218,Native_American,249918.35,Depression,Pain,Bleeding,Cooley,2
+766,Frank,Watson,Male,Mandarin,'Help Desk Technician',43.10806,141.55056,Native_American,69478.49,Depression,Nausea,Rash,Anderson,2
+767,Randy,Marshall,Male,Spanish,'Legal Assistant',7.08953,100.41075,Asian,26081.57,Anxiety,Pain,Bleeding,Blackwell,3
+768,Kathy,Fields,Female,Japanese,'Physical Therapy Assistant',6.34633,-75.50888,Asian,204699.37,Anxiety,Overheating,Bruise,Carson,3
+769,Julie,Sullivan,Female,Mandarin,'Clinical Specialist',52.33429,15.29769,Ugly,185404.54,Anxiety,Aching,Rash,Cooley,3
+770,Frank,Bryant,Male,French,'Staff Scientist',30.6131,53.1954,Latino,109391.85,Anxiety,Pain,Bleeding,Rey,3
+771,Thomas,Miller,Male,English,'Software Test Engineer III',39.8726,-86.2768,Ugly,267952.41,Psychosis,Aching,Bleeding,Urbani,5
+772,Jeffrey,Burton,Male,French,'Quality Engineer',41.84228,113.14286,Black,259665.61,Depression,Pain,Bleeding,Urbani,3
+773,Lisa,Wood,Female,Japanese,'Biostatistician I',26.05958,119.53502,Black,60924.25,Psychosis,Aching,Rash,Anderson,5
+774,Helen,Grant,Female,Spanish,'Financial Analyst',12.82736,101.20273,Ugly,187610.56,Depression,Headache,Bruise,Drew,5
+775,Marilyn,Myers,Female,Japanese,'Office Assistant IV',46.83333,40.75,Native_American,249335.93,Anxiety,Overheating,Bruise,Anderson,4
+776,Bruce,Ruiz,Male,English,'Internal Auditor',34.63972,108.415,Black,125107.86,Anxiety,Overheating,Rash,Drew,2
+777,Shirley,Moore,Female,Money,'Administrative Officer',45.67636,19.08809,Latino,222008.77,Anxiety,Overheating,Bleeding,Anderson,4
+778,Jean,Reyes,Female,French,'Safety Technician I',30.24712,108.48336,White,15361.26,Anxiety,Aching,Bruise,Blackwell,4
+779,Robin,Nguyen,Female,Mandarin,'Senior Cost Accountant',49.3252,127.13953,Native_American,169635.20,Depression,Aching,Rash,Carson,2
+780,Lillian,Reid,Female,Klingon,'Community Outreach Specialist',49.35499,-97.36567,Ugly,204381.88,Psychosis,Pain,Rash,Rey,5
+781,Sandra,Simpson,Female,Spanish,'Financial Analyst',29.4106,-98.4128,Latino,19418.59,Depression,Headache,Bleeding,Cooley,5
+782,Irene,Ross,Female,English,'Clinical Specialist',42.9645,126.85512,Asian,197714.36,Depression,Overheating,Rash,Urbani,4
+783,Bruce,Cruz,Male,Spanish,'Teacher',32.32828,35.29134,Asian,91858.39,Depression,Overheating,Rash,Drew,2
+784,Judy,Ortiz,Female,Japanese,'Engineer IV',54.45,-8.28333,Black,224816.58,Anxiety,Overheating,Bruise,Drew,2
+785,Paul,Long,Male,Money,'Internal Auditor',40.79694,20.77694,White,261663.45,Anxiety,Overheating,Rash,Carson,3
+786,Terry,Thompson,Male,Klingon,'Cost Accountant',48.8763,2.3183,Latino,163280.62,Anxiety,Aching,Rash,Cooley,2
+787,Sean,Russell,Male,Japanese,'Safety Technician II',-18.61667,26.86667,Native_American,171263.53,Psychosis,Pain,Rash,Rey,2
+788,Melissa,Fuller,Female,Klingon,'VP Accounting',16.25652,43.85476,Latino,87202.09,Psychosis,Overheating,Bruise,Rey,4
+789,Anthony,Banks,Male,Money,'Community Outreach Specialist',49.62739,23.69952,Latino,205570.37,Psychosis,Aching,Rash,Drew,4
+790,Louise,Murphy,Female,French,'Food Chemist',25.42781,118.65731,Latino,221576.70,Anxiety,Overheating,Rash,Blackwell,3
+791,Jane,Lopez,Female,Klingon,'Staff Accountant II',48.30373,121.31413,White,158938.05,Psychosis,Aching,Bruise,Urbani,1
+792,Fred,Flores,Male,Mandarin,'Geologist II',-7.2447,107.9085,Asian,135347.49,Psychosis,Pain,Bruise,Drew,2
+793,Stephen,Lawson,Male,Mandarin,'Occupational Therapist',19.0531,-96.4161,Native_American,57817.40,Anxiety,Nausea,Bruise,Anderson,5
+794,Ernest,Mendoza,Male,English,'Safety Technician I',6.67342,-3.96938,Black,138621.76,Depression,Pain,Bruise,Rey,3
+795,Lori,Castillo,Female,Klingon,'Accounting Assistant IV',14.98333,102.65,Latino,207707.86,Psychosis,Overheating,Bruise,Blackwell,3
+796,Denise,Snyder,Female,Spanish,'Chemical Engineer',41.91667,118.66667,Asian,4837.02,Depression,Headache,Rash,Drew,3
+797,Alan,Anderson,Male,Money,'Business Systems Development Analyst',40.72389,19.55611,Native_American,139605.47,Psychosis,Overheating,Rash,Carson,4
+798,Todd,Murray,Male,Japanese,'Internal Auditor',-7.2655,108.4403,Asian,198139.50,Anxiety,Nausea,Bleeding,Anderson,1
+799,Edward,Ramos,Male,English,'Social Worker',44.76578,127.58015,Asian,241758.27,Anxiety,Headache,Bleeding,Cooley,4
+800,Jason,Bishop,Male,Spanish,'Web Designer III',23.75912,116.17092,White,112606.38,Anxiety,Overheating,Bleeding,Drew,5
+801,Doris,Burke,Female,Money,'Human Resources Assistant I',10.446,122.8348,Ugly,128160.72,Depression,Headache,Bleeding,Anderson,2
+802,Carolyn,Jordan,Female,Klingon,'VP Marketing',-8.0972,111.8163,Black,89216.32,Psychosis,Aching,Rash,Rey,5
+803,Cynthia,Carroll,Female,Mandarin,'Junior Executive',38.92072,114.46674,Native_American,257955.49,Anxiety,Overheating,Bruise,Cooley,2
+804,Arthur,Freeman,Male,French,'Chief Design Engineer',41.3167,-8.15,Native_American,288083.66,Depression,Headache,Bruise,Rey,5
+805,Diane,Barnes,Female,Klingon,'Accountant IV',48.4,-4.4833,Black,178601.03,Depression,Pain,Bruise,Rey,3
+806,Cheryl,Mcdonald,Female,French,'Programmer Analyst III',48.9836,2.5256,Asian,115567.88,Psychosis,Nausea,Bruise,Blackwell,3
+807,John,Hart,Male,Mandarin,'Senior Editor',21.8665,106.76833,Latino,279853.72,Depression,Nausea,Bleeding,Drew,1
+808,Paul,Murray,Male,Mandarin,'Nurse Practicioner',40.33444,123.43722,Native_American,204105.24,Psychosis,Nausea,Bruise,Urbani,1
+809,Betty,Mccoy,Female,French,'Project Manager',-3.99313,-79.20422,Black,283466.57,Depression,Overheating,Bruise,Drew,3
+810,Lori,Rodriguez,Female,Mandarin,'Administrative Assistant III',-7.2338,108.1632,Native_American,289122.86,Psychosis,Overheating,Rash,Drew,2
+811,Deborah,Watkins,Female,Mandarin,'Computer Systems Analyst III',32.06482,121.36194,Native_American,51190.27,Psychosis,Aching,Bruise,Urbani,3
+812,Anna,Sanchez,Female,Klingon,'Safety Technician I',-7.6549,108.6106,Latino,213953.73,Depression,Aching,Rash,Drew,5
+813,Justin,Ramos,Male,Money,'Structural Analysis Engineer',-6.9769,114.0854,Asian,222306.15,Psychosis,Aching,Bruise,Anderson,3
+814,Robert,Robinson,Male,Spanish,'Administrative Officer',41.14788,24.93869,Asian,51690.71,Psychosis,Headache,Rash,Carson,1
+815,Joshua,Tucker,Male,Spanish,'Compensation Analyst',46.976,-0.2151,Black,221860.22,Psychosis,Pain,Rash,Urbani,4
+816,Gary,Warren,Male,Japanese,'Project Manager',26.21167,109.52056,Native_American,115484.26,Depression,Nausea,Bleeding,Urbani,1
+817,Adam,Schmidt,Male,Japanese,'Food Chemist',35.21995,71.52284,White,135014.59,Anxiety,Nausea,Bleeding,Carson,1
+818,Nicole,Romero,Female,Money,'Software Test Engineer II',13.78694,45.2304,White,168151.89,Anxiety,Pain,Bruise,Anderson,4
+819,Louis,Bennett,Male,Mandarin,'Administrative Officer',57.06028,63.74811,White,20984.07,Anxiety,Nausea,Bruise,Rey,3
+820,Barbara,Hamilton,Female,Spanish,'Programmer Analyst IV',48.92373,14.45383,Latino,135198.77,Anxiety,Pain,Bleeding,Urbani,1
+821,Jimmy,Anderson,Male,Klingon,'Technical Writer',1.04168,124.68362,White,100756.81,Psychosis,Headache,Bleeding,Urbani,1
+822,Ashley,Smith,Female,Japanese,'Senior Financial Analyst',41.98333,27.53333,Native_American,178808.42,Anxiety,Aching,Bleeding,Anderson,4
+823,Julie,Snyder,Female,English,'Mechanical Systems Engineer',20.87776,95.85844,Black,293242.84,Depression,Headache,Rash,Urbani,3
+824,Harry,George,Male,Klingon,'Project Manager',40.83486,43.7779,Asian,83745.43,Depression,Nausea,Bruise,Drew,2
+825,Amy,Hayes,Female,Klingon,'Compensation Analyst',31.2264,105.38614,Ugly,263029.44,Anxiety,Aching,Bruise,Urbani,2
+826,Jack,Fernandez,Male,Mandarin,'Senior Cost Accountant',13.11667,-87,Asian,9012.11,Anxiety,Aching,Bruise,Urbani,4
+827,Jeffrey,Kelley,Male,Klingon,'Nurse',-7.159,108.1477,Asian,282642.91,Anxiety,Headache,Bruise,Blackwell,2
+828,Lois,Duncan,Female,Mandarin,'GIS Technical Architect',15.26453,104.39769,Asian,117494.25,Anxiety,Pain,Rash,Carson,2
+829,George,Torres,Male,French,'Research Nurse',-8.92947,-74.70771,White,126832.41,Depression,Overheating,Rash,Carson,1
+830,David,Perez,Male,Klingon,'Web Developer II',40.83271,122.76851,Ugly,166380.54,Psychosis,Headache,Bruise,Blackwell,5
+831,Donald,Morris,Male,French,'Assistant Professor',2.2057,102.2562,Ugly,190153.09,Depression,Pain,Bruise,Carson,4
+832,Shawn,Nichols,Male,French,'Senior Quality Engineer',-3.66667,-45.38,Asian,237310.36,Psychosis,Overheating,Bleeding,Blackwell,1
+833,Joseph,Frazier,Male,Klingon,'Chief Design Engineer',27.70055,83.44836,Native_American,8975.48,Depression,Overheating,Bleeding,Urbani,1
+834,Walter,Ruiz,Male,Japanese,'Software Consultant',33.03314,112.23321,Latino,164628.69,Depression,Aching,Rash,Drew,1
+835,Shirley,Price,Female,Klingon,'Assistant Professor',53.38365,55.90773,Asian,175073.89,Anxiety,Aching,Bleeding,Blackwell,1
+836,Ruth,Parker,Female,Money,'Office Assistant IV',-18.20408,-65.18068,Ugly,149629.77,Anxiety,Overheating,Bleeding,Blackwell,5
+837,Paul,Boyd,Male,Mandarin,'Assistant Professor',53.2192,6.5667,Ugly,253699.56,Psychosis,Nausea,Rash,Urbani,2
+838,Justin,Garcia,Male,Money,'Senior Cost Accountant',36.56583,139.88361,Ugly,44407.20,Depression,Aching,Bruise,Cooley,5
+839,Christopher,Williams,Male,Spanish,'Professor',7.70611,122.13528,White,195220.82,Psychosis,Headache,Bruise,Cooley,1
+840,Jennifer,Black,Female,Japanese,'Paralegal',6.09056,124.42333,Ugly,239570.60,Depression,Pain,Rash,Carson,5
+841,Beverly,Garcia,Female,French,'Sales Associate',39.8688,116.27745,Asian,241073.52,Depression,Pain,Bleeding,Drew,4
+842,Stephen,Hawkins,Male,Spanish,'Structural Engineer',9.95091,-84.08503,Asian,27247.31,Anxiety,Aching,Bruise,Cooley,4
+843,Robin,Andrews,Female,Japanese,'Analyst Programmer',46.6667,5.55,White,60972.85,Anxiety,Nausea,Bruise,Carson,1
+844,Scott,Fuller,Male,Klingon,'Chemical Engineer',59.9176,10.6364,White,100431.08,Psychosis,Nausea,Rash,Cooley,3
+845,Lawrence,Olson,Male,Klingon,'Technical Writer',-15.0525,-71.12889,Asian,130955.08,Depression,Pain,Rash,Anderson,3
+846,Maria,White,Female,Japanese,'Geologist II',14.454,120.5914,Black,54163.48,Anxiety,Nausea,Bleeding,Blackwell,4
+847,Clarence,Rice,Male,Money,'Safety Technician IV',31.22112,118.92023,Black,276505.34,Anxiety,Aching,Bleeding,Urbani,1
+848,Jessica,Sims,Female,English,'Speech Pathologist',29.08139,106.81639,Black,49337.73,Psychosis,Headache,Bruise,Carson,1
+849,Melissa,Dixon,Female,English,'Editor',50.633,3.0586,Native_American,79228.69,Depression,Nausea,Bleeding,Anderson,4
+850,Kathleen,Day,Female,Mandarin,'Structural Engineer',-7.15908,113.51864,White,80324.40,Anxiety,Nausea,Bruise,Cooley,3
+851,Jeffrey,Bailey,Male,Klingon,'Legal Assistant',37.34976,23.4656,Black,26937.73,Anxiety,Nausea,Bruise,Urbani,5
+852,Amanda,Fox,Female,Mandarin,'Software Consultant',-8.5649,119.9362,Black,186647.65,Depression,Pain,Bruise,Blackwell,2
+853,Charles,Hawkins,Male,Spanish,'Accountant I',28.28703,114.55366,Asian,270597.93,Depression,Aching,Rash,Anderson,5
+854,Gloria,Dunn,Female,Japanese,'Nurse',28.67452,121.2579,Black,288011.17,Anxiety,Aching,Bruise,Anderson,2
+855,Lawrence,Lee,Male,Spanish,'Civil Engineer',-8.4403,115.5602,Asian,83763.18,Anxiety,Headache,Bleeding,Urbani,5
+856,Julia,Stewart,Female,Japanese,'Staff Accountant III',20.60101,-76.13188,Latino,54040.27,Depression,Headache,Bleeding,Rey,1
+857,Gary,Gibson,Male,Japanese,'Paralegal',64.6833,21.2333,Asian,84843.04,Anxiety,Nausea,Bruise,Cooley,2
+858,Andrea,Oliver,Female,Money,'Project Manager',-26.74056,-49.17694,Black,79071.33,Anxiety,Headache,Bruise,Rey,5
+859,Jane,Edwards,Female,Mandarin,'Associate Professor',35.20944,127.46444,Native_American,226305.68,Psychosis,Pain,Bruise,Drew,4
+860,Virginia,Ray,Female,French,'Health Coach I',28.26633,104.38905,Latino,122716.27,Depression,Overheating,Rash,Cooley,2
+861,Dennis,Lewis,Male,French,'Marketing Assistant',13.58333,100.81667,Native_American,257761.47,Anxiety,Nausea,Bruise,Rey,3
+862,Charles,Day,Male,Mandarin,'Teacher',50.23341,14.41078,Asian,41083.70,Psychosis,Overheating,Bruise,Anderson,5
+863,Ruth,Ruiz,Female,Japanese,'Nuclear Power Engineer',-8.1272,111.9898,Native_American,96189.34,Anxiety,Nausea,Bruise,Carson,5
+864,Cynthia,Fuller,Female,English,'Sales Associate',47.38254,110.31647,White,299424.51,Depression,Nausea,Bruise,Cooley,4
+865,Deborah,Kim,Female,French,'Sales Associate',49.0254,2.2169,White,268415.53,Psychosis,Pain,Bleeding,Drew,2
+866,Earl,King,Male,Money,'Administrative Assistant II',10.16667,38.13333,Asian,10726.00,Depression,Nausea,Bruise,Cooley,5
+867,Lillian,Torres,Female,Spanish,'Technical Writer',34.79049,48.57011,Native_American,21471.76,Psychosis,Nausea,Bruise,Urbani,1
+868,Eric,Lawrence,Male,Spanish,'Financial Analyst',30.34822,114.05114,Black,263945.29,Anxiety,Aching,Bleeding,Drew,2
+869,Brian,Green,Male,Money,'General Manager',16.79183,-62.21058,Asian,229378.06,Depression,Pain,Bleeding,Drew,2
+870,Johnny,Gray,Male,English,'Civil Engineer',-8.03333,-78.53333,Ugly,292673.45,Anxiety,Nausea,Bleeding,Blackwell,3
+871,Ruby,Woods,Female,Japanese,'Systems Administrator II',33.8142,106.24476,Latino,181374.50,Depression,Pain,Bruise,Blackwell,5
+872,Scott,Fisher,Male,Japanese,'Physical Therapy Assistant',47.4667,-0.55,Native_American,153666.39,Psychosis,Overheating,Bruise,Anderson,1
+873,Joan,Collins,Female,Spanish,'Programmer Analyst I',51.5,3.6139,Ugly,102190.77,Psychosis,Pain,Bleeding,Carson,2
+874,Karen,Dean,Female,Spanish,'Project Manager',56.19239,86.64161,Native_American,180858.54,Psychosis,Nausea,Bleeding,Cooley,1
+875,Lois,Fox,Female,Spanish,'Data Coordiator',-6.8844,112.2051,Asian,71107.07,Anxiety,Nausea,Bleeding,Drew,3
+876,Edward,Knight,Male,English,'Sales Associate',10.21682,-83.78483,Latino,11997.45,Psychosis,Overheating,Rash,Anderson,5
+877,Ashley,Hughes,Female,English,'Internal Auditor',19.65623,109.29071,Black,190329.23,Depression,Aching,Rash,Blackwell,3
+878,Virginia,Wallace,Female,Klingon,'Environmental Specialist',28.3082,-110.5369,White,36089.77,Psychosis,Headache,Rash,Urbani,3
+879,Anthony,King,Male,Money,'Graphic Designer',-9.80105,-76.07194,Latino,111819.38,Psychosis,Overheating,Bruise,Urbani,2
+880,Janet,West,Female,Japanese,'Business Systems Development Analyst',38.01667,23.75,White,43183.70,Psychosis,Pain,Rash,Rey,2
+881,Carlos,Rogers,Male,Money,'Clinical Specialist',28.52361,112.12528,Black,147431.76,Psychosis,Aching,Bruise,Anderson,5
+882,Evelyn,Ryan,Female,Spanish,'Desktop Support Technician',6.68444,125.3525,Asian,185720.59,Psychosis,Headache,Rash,Urbani,4
+883,Patrick,Mendoza,Male,Spanish,'Operator',49.94612,24.9795,Black,183649.03,Psychosis,Headache,Bleeding,Cooley,5
+884,Marie,Harper,Female,French,'Health Coach IV',35.86667,140.01667,Black,120121.23,Psychosis,Headache,Rash,Rey,2
+885,Jonathan,Price,Male,Spanish,'Health Coach II',50.58566,16.33181,White,168583.82,Psychosis,Pain,Bruise,Cooley,4
+886,Beverly,Hawkins,Female,Spanish,'Administrative Assistant III',48.5834,7.743,Native_American,9583.33,Psychosis,Aching,Bleeding,Carson,5
+887,Charles,Myers,Male,Mandarin,'Geologist I',32.22584,35.07179,Ugly,183072.08,Anxiety,Pain,Bleeding,Rey,4
+888,Douglas,Green,Male,English,'Research Associate',41.4667,-8.2514,Black,249412.64,Psychosis,Aching,Bruise,Anderson,3
+889,Jesse,Hayes,Male,Klingon,'Administrative Officer',-6.81923,-76.57578,White,254307.00,Depression,Pain,Bleeding,Urbani,5
+890,Peter,West,Male,French,'Quality Engineer',28.03167,110.95444,White,177601.84,Psychosis,Nausea,Bruise,Carson,5
+891,Martha,Gilbert,Female,Money,'Clinical Specialist',42.10333,21.07778,Native_American,175975.92,Anxiety,Aching,Rash,Carson,4
+892,Norma,Carpenter,Female,French,'Human Resources Assistant II',29.6156,107.23286,Asian,256481.83,Anxiety,Overheating,Rash,Drew,5
+893,Maria,Jacobs,Female,Mandarin,'Senior Financial Analyst',-5.85833,-35.35389,White,83546.33,Depression,Headache,Rash,Blackwell,4
+894,Wanda,Lee,Female,French,'Desktop Support Technician',14.52639,-90.75972,White,27049.15,Psychosis,Overheating,Rash,Urbani,3
+895,Debra,Ellis,Female,Spanish,'Recruiter',29.82739,106.43645,Asian,116576.68,Anxiety,Overheating,Bleeding,Drew,2
+896,Phyllis,Perkins,Female,Japanese,'VP Sales',40.4833,-7.8667,Latino,107346.44,Anxiety,Pain,Bruise,Cooley,3
+897,Frank,Brown,Male,Japanese,'Pharmacist',43.5167,4.9833,Native_American,146700.06,Anxiety,Aching,Bruise,Cooley,5
+898,Keith,Gonzales,Male,Klingon,'Quality Control Specialist',11.3937,122.6856,Native_American,291799.46,Anxiety,Pain,Bleeding,Urbani,1
+899,Alan,Burke,Male,Money,'VP Marketing',-6.2369,106.0119,Asian,55827.84,Psychosis,Nausea,Bleeding,Urbani,4
+900,Joyce,Roberts,Female,Mandarin,'Graphic Designer',55.08333,24.28333,Native_American,168016.88,Anxiety,Nausea,Bleeding,Anderson,3
+901,Jessica,Bowman,Female,Mandarin,'Director of Sales',57.0679,27.91384,Ugly,75935.10,Psychosis,Pain,Bruise,Rey,3
+902,Henry,Brown,Male,English,'Safety Technician III',-9.80105,-76.07194,Latino,237719.63,Depression,Overheating,Rash,Carson,5
+903,Laura,Howard,Female,English,'Developer III',45.23422,20.02327,Black,265996.62,Depression,Pain,Bleeding,Rey,1
+904,Thomas,Stewart,Male,English,'Geologist III',-9.6976,124.1397,Native_American,117715.50,Anxiety,Aching,Bleeding,Anderson,3
+905,Walter,Campbell,Male,French,'Statistician III',5.875,100.3757,Asian,168738.64,Anxiety,Headache,Rash,Carson,1
+906,Joe,Jacobs,Male,Klingon,'Structural Engineer',50.42675,80.26669,Ugly,42668.94,Anxiety,Overheating,Bleeding,Anderson,5
+907,Joseph,Banks,Male,Klingon,'VP Sales',36.35,140.3,Ugly,188173.56,Anxiety,Pain,Bruise,Anderson,1
+908,Keith,Moreno,Male,English,'Speech Pathologist',-7.59417,109.14694,Ugly,140491.65,Depression,Aching,Rash,Cooley,1
+909,Brian,Thompson,Male,Klingon,'Biostatistician III',10.59606,122.5899,Asian,183900.37,Depression,Pain,Rash,Blackwell,4
+910,Pamela,Lewis,Female,Money,'Teacher',47.80168,125.66246,Asian,72427.20,Anxiety,Overheating,Bruise,Urbani,4
+911,Jessica,Olson,Female,French,'Dental Hygienist',-16.32667,-48.95278,Black,255057.51,Psychosis,Nausea,Bleeding,Drew,5
+912,Helen,Martin,Female,Spanish,'Social Worker',41.38944,19.8275,Ugly,227159.29,Depression,Nausea,Rash,Blackwell,4
+913,Phyllis,Elliott,Female,English,'VP Marketing',49.19177,16.77146,Black,135507.62,Psychosis,Headache,Bleeding,Urbani,5
+914,Laura,Rice,Female,French,'Health Coach IV',-32.61072,-63.58038,Native_American,234255.10,Depression,Nausea,Bruise,Anderson,3
+915,Lisa,Phillips,Female,Klingon,'Accountant I',-7.2056,107.9047,White,113272.55,Depression,Pain,Bruise,Carson,2
+916,Ronald,Schmidt,Male,Spanish,'Design Engineer',40.78373,22.088,Latino,83003.76,Anxiety,Overheating,Bleeding,Blackwell,5
+917,Keith,Austin,Male,Spanish,'Senior Developer',49.75915,19.48915,Ugly,160059.78,Psychosis,Pain,Bruise,Drew,2
+918,Alice,Watson,Female,Japanese,'Project Manager',37.48974,71.55304,Black,267791.52,Anxiety,Overheating,Rash,Blackwell,5
+919,Gary,Washington,Male,French,'Financial Advisor',25.64534,57.77552,Latino,270896.45,Psychosis,Nausea,Rash,Drew,1
+920,Steven,Chapman,Male,Klingon,'Structural Engineer',29.18647,116.67044,White,275079.76,Depression,Pain,Bleeding,Drew,4
+921,Chris,Torres,Male,French,'Compensation Analyst',-7.3846,106.9543,Asian,270648.14,Anxiety,Overheating,Bruise,Drew,5
+922,Rebecca,Thompson,Female,Klingon,'Quality Control Specialist',41.1167,1.25,Black,167845.30,Depression,Pain,Rash,Carson,4
+923,Albert,Daniels,Male,Japanese,'Senior Quality Engineer',7.34167,125.575,White,151158.87,Anxiety,Nausea,Bleeding,Drew,3
+924,Kimberly,Grant,Female,Klingon,'Compensation Analyst',6.26793,21.22468,Asian,99638.12,Anxiety,Pain,Rash,Urbani,3
+925,William,Webb,Male,Japanese,'Food Chemist',50.37961,25.70843,Asian,40657.63,Depression,Headache,Bleeding,Anderson,3
+926,Mary,Mccoy,Female,Mandarin,'Compensation Analyst',14.66,120.56528,Native_American,9169.94,Anxiety,Aching,Rash,Cooley,2
+927,Julia,Wallace,Female,French,'Software Engineer IV',40.05715,116.4031,Native_American,129967.34,Anxiety,Overheating,Rash,Carson,4
+928,Ralph,Collins,Male,Spanish,'Data Coordiator',29.84594,105.87782,Black,40447.08,Psychosis,Pain,Rash,Cooley,2
+929,Albert,Hunter,Male,Japanese,'Business Systems Development Analyst',15.15,-87.88333,Asian,88075.90,Depression,Nausea,Rash,Drew,4
+930,Douglas,Fox,Male,Mandarin,'Paralegal',-5.1275,-39.73222,Native_American,240122.22,Psychosis,Aching,Bruise,Carson,3
+931,Paula,Flores,Female,Japanese,'Teacher',28.7109,117.81508,Black,106177.89,Psychosis,Pain,Bleeding,Anderson,4
+932,Richard,Wright,Male,English,'Tax Accountant',54.915,33.29722,Asian,231516.90,Psychosis,Pain,Rash,Anderson,3
+933,Emily,West,Female,Klingon,'Systems Administrator I',48.67935,38.08902,Ugly,216012.09,Depression,Aching,Bruise,Urbani,1
+934,Carlos,Long,Male,Mandarin,'Tax Accountant',-7.1145,113.7489,Black,200239.16,Depression,Headache,Rash,Carson,3
+935,Patricia,Reynolds,Female,Mandarin,'Staff Scientist',28.03923,107.79276,Ugly,120068.16,Depression,Aching,Bruise,Blackwell,1
+936,Phillip,Hamilton,Male,English,'Legal Assistant',49.0137,2.4659,White,282584.16,Depression,Nausea,Rash,Rey,5
+937,Craig,Perry,Male,Klingon,'Web Designer IV',64.76667,26.1,Latino,66324.92,Psychosis,Aching,Rash,Carson,1
+938,Teresa,Lane,Female,Mandarin,'Accountant II',29.16692,111.49749,Native_American,160196.69,Depression,Headache,Rash,Blackwell,4
+939,Angela,Harrison,Female,French,'Community Outreach Specialist',19.64956,-70.94927,Native_American,52176.60,Depression,Pain,Bleeding,Blackwell,1
+940,Janet,Harvey,Female,Money,'Assistant Manager',-29.85185,30.99337,Native_American,176055.64,Psychosis,Pain,Bruise,Carson,4
+941,Phillip,Franklin,Male,English,'Account Representative II',-5.13326,105.43595,White,123540.83,Psychosis,Aching,Bruise,Anderson,3
+942,Samuel,Crawford,Male,Japanese,'Cost Accountant',18.3419,-64.9307,Native_American,199226.92,Depression,Nausea,Bleeding,Urbani,1
+943,Christina,Graham,Female,Spanish,'Account Coordinator',16.6744,121.4658,Asian,31621.18,Psychosis,Nausea,Rash,Cooley,2
+944,Nicholas,Diaz,Male,Klingon,'Geologist I',56.44679,21.58968,Ugly,20169.96,Depression,Overheating,Bruise,Urbani,2
+945,Katherine,Mcdonald,Female,Money,'Financial Advisor',9.55421,123.75648,Latino,57143.75,Psychosis,Overheating,Bruise,Urbani,2
+946,Patricia,Medina,Female,French,'Junior Executive',48.85861,17.02859,Asian,197980.46,Anxiety,Headache,Bleeding,Rey,4
+947,Edward,Stanley,Male,French,'Associate Professor',20.78919,97.03776,Latino,246586.44,Anxiety,Pain,Bruise,Urbani,1
+948,Peter,Stone,Male,Spanish,'VP Marketing',42.0667,-8.4333,Native_American,58797.04,Depression,Aching,Bruise,Cooley,3
+949,Phillip,Hernandez,Male,Money,'Geological Engineer',29.24032,119.8932,White,199948.44,Anxiety,Headache,Rash,Rey,3
+950,Eric,Vasquez,Male,Spanish,'Paralegal',51.78167,87.26306,Black,170943.19,Anxiety,Nausea,Bleeding,Carson,4
+951,Edward,Washington,Male,English,'Financial Analyst',-9.5639,119.2014,Latino,103089.49,Anxiety,Overheating,Rash,Blackwell,2
+952,Gloria,Cruz,Female,Japanese,'Professor',-37.46025,-63.58537,Black,4772.01,Psychosis,Aching,Bruise,Urbani,1
+953,Carlos,Banks,Male,French,'Data Coordiator',-6.9379,112.0609,Ugly,71198.62,Depression,Overheating,Bruise,Cooley,4
+954,William,Jones,Male,French,'VP Accounting',-9.045,-35.39833,Latino,73725.92,Psychosis,Overheating,Rash,Urbani,1
+955,Tammy,Berry,Female,Japanese,'Registered Nurse',29.82617,114.93978,Native_American,110682.22,Anxiety,Pain,Rash,Blackwell,1
+956,Linda,Bowman,Female,Japanese,'Environmental Tech',18.68703,98.91939,Black,37752.90,Depression,Aching,Bleeding,Anderson,3
+957,Rose,Holmes,Female,Mandarin,'Pharmacist',45.12833,42.02556,Latino,291586.37,Depression,Nausea,Rash,Rey,3
+958,Michelle,Bryant,Female,Money,'Accountant I',6.77667,124.645,Asian,114645.76,Psychosis,Nausea,Bleeding,Drew,5
+959,Elizabeth,Phillips,Female,French,'Media Manager III',16.25704,-3.40126,Latino,51159.19,Depression,Aching,Bruise,Cooley,4
+960,Michelle,Watson,Female,English,'Structural Analysis Engineer',41.82,41.77528,Asian,248772.96,Depression,Overheating,Rash,Urbani,2
+961,Gerald,Ellis,Male,English,'Project Manager',53.37058,-6.25298,Native_American,294015.62,Psychosis,Aching,Bleeding,Cooley,5
+962,Douglas,Castillo,Male,Money,'Sales Associate',-29.02889,-51.18167,Ugly,215788.17,Depression,Overheating,Rash,Carson,2
+963,Philip,Perez,Male,Mandarin,'Associate Professor',48.02108,40.12282,Native_American,65085.90,Psychosis,Nausea,Rash,Blackwell,5
+964,Terry,Foster,Male,English,'Community Outreach Specialist',10.15917,-69.01111,Asian,31161.96,Depression,Overheating,Rash,Rey,5
+965,Paula,Lewis,Female,Japanese,'VP Marketing',38.07099,114.2694,Ugly,253019.90,Depression,Headache,Bruise,Cooley,4
+966,Craig,Spencer,Male,Money,'Speech Pathologist',-8.6461,120.7225,Latino,282836.80,Psychosis,Overheating,Bruise,Urbani,1
+967,Lori,Lawrence,Female,Klingon,'Research Associate',50.24532,-99.84364,Native_American,262832.69,Anxiety,Overheating,Bleeding,Carson,1
+968,Kathleen,Torres,Female,Spanish,'Database Administrator I',-19.67016,30.00589,Asian,14806.85,Anxiety,Pain,Bleeding,Anderson,5
+969,Andrew,Fields,Male,Japanese,'Paralegal',25.49304,115.30032,Native_American,11839.30,Depression,Nausea,Bruise,Blackwell,1
+970,Tina,Bailey,Female,French,'Civil Engineer',-7.48315,112.42704,Asian,246632.11,Psychosis,Nausea,Bruise,Carson,3
+971,Elizabeth,Vasquez,Female,Money,'Assistant Manager',-20.18417,-44.77111,White,246454.64,Depression,Headache,Rash,Anderson,5
+972,Susan,Burns,Female,Mandarin,'Sales Associate',40.7792,-7.9058,White,271542.18,Anxiety,Aching,Bleeding,Urbani,4
+973,Jeffrey,Ramirez,Male,Klingon,'Office Assistant I',35.84194,14.54306,Latino,212727.43,Anxiety,Aching,Bleeding,Carson,1
+974,Roy,Montgomery,Male,Mandarin,'VP Sales',62.11745,39.33131,White,240572.38,Depression,Nausea,Bleeding,Carson,4
+975,Julia,James,Female,French,'Information Systems Manager',54.78036,-127.17428,Latino,111952.12,Anxiety,Pain,Bruise,Rey,5
+976,Adam,Andrews,Male,English,'Budget/Accounting Analyst I',34.09301,108.29912,White,224446.24,Depression,Overheating,Bleeding,Drew,2
+977,Sarah,Hughes,Female,French,'Safety Technician I',25.35967,114.54047,Native_American,170158.77,Depression,Overheating,Rash,Rey,4
+978,Maria,Martinez,Female,Spanish,'Administrative Officer',51.36883,19.35671,Native_American,96441.09,Anxiety,Headache,Bleeding,Rey,3
+979,Carolyn,Ruiz,Female,Money,'Database Administrator IV',-10.1201,123.8115,Black,15433.25,Depression,Headache,Rash,Carson,3
+980,Steve,Rogers,Male,Japanese,'Project Manager',47.3167,5.0167,Ugly,295708.57,Psychosis,Overheating,Bleeding,Cooley,3
+981,Louise,Ramirez,Female,French,'Software Engineer IV',8.35109,100.20195,Ugly,223935.19,Psychosis,Headache,Rash,Cooley,3
+982,Laura,Garcia,Female,Spanish,'Programmer Analyst III',-23.08842,-47.2119,Black,150070.56,Depression,Pain,Bruise,Carson,5
+983,Clarence,Harrison,Male,French,'Analyst Programmer',47.74462,87.49812,White,121941.37,Depression,Nausea,Rash,Carson,2
+984,Ashley,Frazier,Female,Japanese,'Teacher',68.70981,-52.86988,Ugly,72100.98,Anxiety,Overheating,Bleeding,Carson,4
+985,Julia,Bennett,Female,Mandarin,'VP Sales',-3.9,32.93333,Asian,195508.47,Depression,Overheating,Bleeding,Rey,4
+986,Judy,Ferguson,Female,Mandarin,'Accountant I',22.59306,113.8889,Black,87681.48,Psychosis,Aching,Bruise,Blackwell,3
+987,Jane,Peters,Female,Klingon,'Registered Nurse',12.01366,-83.76353,Latino,258240.34,Depression,Overheating,Bruise,Rey,4
+988,Maria,Carroll,Female,French,'Structural Engineer',-14.06944,-42.475,Native_American,291912.31,Anxiety,Aching,Rash,Drew,1
+989,Julie,Little,Female,Klingon,'Dental Hygienist',40.68744,22.85799,Ugly,10219.49,Depression,Nausea,Bruise,Rey,1
+990,Ryan,Harrison,Male,English,'VP Quality Control',32.08227,34.81065,Native_American,77255.53,Depression,Headache,Rash,Carson,2
+991,Anne,Duncan,Female,English,'GIS Technical Architect',8.1537,-77.69308,Ugly,95285.79,Psychosis,Headache,Bruise,Rey,5
+992,Walter,Mendoza,Male,Klingon,'Compensation Analyst',40.8247,-73.894,Latino,153972.03,Psychosis,Overheating,Rash,Carson,4
+993,Brenda,Hunt,Female,Japanese,'Help Desk Operator',-8.8,121.9778,Black,107389.97,Psychosis,Headache,Rash,Cooley,3
+994,Karen,Harrison,Female,Money,'Dental Hygienist',14.49052,44.13108,Black,29502.75,Psychosis,Headache,Rash,Rey,2
+995,Theresa,Johnson,Female,Mandarin,'Operator',32.33222,106.64283,Native_American,92214.71,Depression,Headache,Rash,Blackwell,4
+996,Samuel,Harrison,Male,Money,'Help Desk Operator',37.76667,21.33333,Asian,288491.86,Depression,Aching,Bleeding,Anderson,1
+997,Larry,Carpenter,Male,French,'Recruiter',-6.9179,113.6087,Asian,25723.76,Depression,Aching,Bleeding,Blackwell,4
+998,Barbara,Watkins,Female,Mandarin,'Product Engineer',5.9765,116.1158,Asian,111176.74,Psychosis,Overheating,Bleeding,Urbani,2
+999,Heather,Kim,Female,Spanish,'Nuclear Power Engineer',40.45,-7.85,Ugly,203917.47,Depression,Overheating,Bleeding,Drew,5
+1000,Tammy,Peterson,Female,English,'Nuclear Power Engineer',2.67075,72.89437,Native_American,178193.62,Anxiety,Headache,Bleeding,Carson,4
